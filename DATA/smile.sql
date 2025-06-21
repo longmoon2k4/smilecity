@@ -1,10 +1,3 @@
--- --------------------------------------------------------
--- Host:                         127.0.0.1
--- Server version:               10.4.28-MariaDB - mariadb.org binary distribution
--- Server OS:                    Win64
--- HeidiSQL Version:             12.5.0.6677
--- --------------------------------------------------------
-
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8 */;
 /*!50503 SET NAMES utf8mb4 */;
@@ -14,13 +7,10 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+DROP DATABASE IF EXISTS `smile`;
+CREATE DATABASE IF NOT EXISTS `smile` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
+USE `smile`;
 
--- Dumping database structure for sulu
-DROP DATABASE IF EXISTS `sulu`;
-CREATE DATABASE IF NOT EXISTS `sulu` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `sulu`;
-
--- Dumping structure for table sulu.addon_account
 DROP TABLE IF EXISTS `addon_account`;
 CREATE TABLE IF NOT EXISTS `addon_account` (
   `name` varchar(60) NOT NULL,
@@ -29,7 +19,6 @@ CREATE TABLE IF NOT EXISTS `addon_account` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.addon_account: ~8 rows (approximately)
 REPLACE INTO `addon_account` (`name`, `label`, `shared`) VALUES
 	('bank_savings', 'Savings account', 0),
 	('caution', 'caution', 0),
@@ -40,7 +29,6 @@ REPLACE INTO `addon_account` (`name`, `label`, `shared`) VALUES
 	('society_police', 'Police', 1),
 	('society_taxi', 'Taxi', 1);
 
--- Dumping structure for table sulu.addon_account_data
 DROP TABLE IF EXISTS `addon_account_data`;
 CREATE TABLE IF NOT EXISTS `addon_account_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -52,7 +40,6 @@ CREATE TABLE IF NOT EXISTS `addon_account_data` (
   KEY `index_addon_account_data_account_name` (`account_name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.addon_account_data: ~5 rows (approximately)
 REPLACE INTO `addon_account_data` (`id`, `account_name`, `money`, `owner`) VALUES
 	(1, 'society_cardealer', 0, NULL),
 	(2, 'society_police', 0, NULL),
@@ -60,7 +47,7 @@ REPLACE INTO `addon_account_data` (`id`, `account_name`, `money`, `owner`) VALUE
 	(4, 'society_mechanic', 0, NULL),
 	(5, 'society_taxi', 0, NULL);
 
--- Dumping structure for table sulu.addon_inventory
+--  Table smile.addon_inventory
 DROP TABLE IF EXISTS `addon_inventory`;
 CREATE TABLE IF NOT EXISTS `addon_inventory` (
   `name` varchar(60) NOT NULL,
@@ -69,7 +56,7 @@ CREATE TABLE IF NOT EXISTS `addon_inventory` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.addon_inventory: ~5 rows (approximately)
+--  Data of table smile.addon_inventory: ~5 rows (approximately)
 REPLACE INTO `addon_inventory` (`name`, `label`, `shared`) VALUES
 	('society_ambulance', 'EMS', 1),
 	('society_cardealer', 'Cardealer', 1),
@@ -77,7 +64,7 @@ REPLACE INTO `addon_inventory` (`name`, `label`, `shared`) VALUES
 	('society_police', 'Police', 1),
 	('society_taxi', 'Taxi', 1);
 
--- Dumping structure for table sulu.addon_inventory_items
+--  Table smile.addon_inventory_items
 DROP TABLE IF EXISTS `addon_inventory_items`;
 CREATE TABLE IF NOT EXISTS `addon_inventory_items` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -91,9 +78,9 @@ CREATE TABLE IF NOT EXISTS `addon_inventory_items` (
   KEY `index_addon_inventory_inventory_name` (`inventory_name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.addon_inventory_items: ~0 rows (approximately)
+--  Data of table smile.addon_inventory_items: ~0 rows (approximately)
 
--- Dumping structure for table sulu.af_composts
+--  Table smile.af_composts
 DROP TABLE IF EXISTS `af_composts`;
 CREATE TABLE IF NOT EXISTS `af_composts` (
   `farmId` int(11) DEFAULT NULL,
@@ -102,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `af_composts` (
   KEY `farmId` (`farmId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.af_composts: ~6 rows (approximately)
+--  Data of table smile.af_composts: ~6 rows (approximately)
 REPLACE INTO `af_composts` (`farmId`, `compostStrid`, `shitAmount`) VALUES
 	(16, 'compost-2', 0),
 	(16, 'compost-1', 0),
@@ -111,7 +98,7 @@ REPLACE INTO `af_composts` (`farmId`, `compostStrid`, `shitAmount`) VALUES
 	(18, 'compost-1', 0),
 	(18, 'compost-2', 0);
 
--- Dumping structure for table sulu.af_farms_base
+--  Table smile.af_farms_base
 DROP TABLE IF EXISTS `af_farms_base`;
 CREATE TABLE IF NOT EXISTS `af_farms_base` (
   `farmId` int(11) NOT NULL AUTO_INCREMENT,
@@ -130,13 +117,13 @@ CREATE TABLE IF NOT EXISTS `af_farms_base` (
   KEY `id` (`farmId`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.af_farms_base: ~3 rows (approximately)
+--  Data of table smile.af_farms_base: ~3 rows (approximately)
 REPLACE INTO `af_farms_base` (`farmId`, `ownerIdentifier`, `ownerName`, `price`, `x`, `y`, `z`, `img`, `name`, `locked`, `milk`, `egg`, `meal`) VALUES
 	(16, 'char1:11000013e99abb8', 'Newbie tập chơi', 10000, 2130, 4794, 41, 'https://fauto.vn/wp-content/uploads/2022/05/chup-anh-sexy-4-600x570.jpg', 'Bo may day', 0, 0, 12, 0),
 	(17, 'char1:11000013d1db9cb', 'Minh Mèo', 50000, 2051, 4810, 41, '', 'cua ai day', 1, 0, 23, 0),
 	(18, 'char1:11000015533e38b', 'H', 5000, 2027, 4833, 41, '', 'ahahah', 0, 0, 0, 0);
 
--- Dumping structure for table sulu.af_paddock_animals
+--  Table smile.af_paddock_animals
 DROP TABLE IF EXISTS `af_paddock_animals`;
 CREATE TABLE IF NOT EXISTS `af_paddock_animals` (
   `aid` int(11) NOT NULL AUTO_INCREMENT,
@@ -153,7 +140,7 @@ CREATE TABLE IF NOT EXISTS `af_paddock_animals` (
   PRIMARY KEY (`aid`) USING BTREE
 ) ENGINE=MyISAM AUTO_INCREMENT=187 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.af_paddock_animals: 37 rows
+--  Data of table smile.af_paddock_animals: 37 rows
 /*!40000 ALTER TABLE `af_paddock_animals` DISABLE KEYS */;
 REPLACE INTO `af_paddock_animals` (`aid`, `farmId`, `paddockStrid`, `hunger`, `age`, `thirst`, `animalType`, `milk`, `weight`, `health`, `extra`) VALUES
 	(150, 16, 'paddock-2', 0, 0, 0, 'COW', 87, NULL, 0, 0.722),
@@ -195,7 +182,7 @@ REPLACE INTO `af_paddock_animals` (`aid`, `farmId`, `paddockStrid`, `hunger`, `a
 	(186, 17, 'chicken-paddock-2', 0, 0, 0, 'CHICKEN', NULL, NULL, 0, 0.984);
 /*!40000 ALTER TABLE `af_paddock_animals` ENABLE KEYS */;
 
--- Dumping structure for table sulu.af_paddock_upgrades
+--  Table smile.af_paddock_upgrades
 DROP TABLE IF EXISTS `af_paddock_upgrades`;
 CREATE TABLE IF NOT EXISTS `af_paddock_upgrades` (
   `farmId` int(11) DEFAULT NULL,
@@ -206,7 +193,7 @@ CREATE TABLE IF NOT EXISTS `af_paddock_upgrades` (
   KEY `farmId` (`farmId`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.af_paddock_upgrades: ~24 rows (approximately)
+--  Data of table smile.af_paddock_upgrades: ~24 rows (approximately)
 REPLACE INTO `af_paddock_upgrades` (`farmId`, `paddockStrid`, `upgradeStrid`, `foodAmount`, `waterAmount`) VALUES
 	(16, 'paddock-1', 'water-2', NULL, 0),
 	(17, 'paddock-2', 'water-1', NULL, 0),
@@ -233,7 +220,7 @@ REPLACE INTO `af_paddock_upgrades` (`farmId`, `paddockStrid`, `upgradeStrid`, `f
 	(17, 'chicken-paddock-1', 'trough-1', 0, NULL),
 	(17, 'chicken-paddock-1', 'trough-2', 0, NULL);
 
--- Dumping structure for table sulu.aircrafts
+--  Table smile.aircrafts
 DROP TABLE IF EXISTS `aircrafts`;
 CREATE TABLE IF NOT EXISTS `aircrafts` (
   `name` varchar(60) NOT NULL,
@@ -243,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `aircrafts` (
   PRIMARY KEY (`model`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.aircrafts: ~11 rows (approximately)
+--  Data of table smile.aircrafts: ~11 rows (approximately)
 REPLACE INTO `aircrafts` (`name`, `model`, `price`, `category`) VALUES
 	('Frogger', 'frogger', 1500000, 'heli'),
 	('Luxor', 'luxor', 1500000, 'plane'),
@@ -257,7 +244,7 @@ REPLACE INTO `aircrafts` (`name`, `model`, `price`, `category`) VALUES
 	('Vestra', 'vestra', 950000, 'plane'),
 	('Volatus', 'volatus', 1000000, 'heli');
 
--- Dumping structure for table sulu.aircraft_categories
+--  Table smile.aircraft_categories
 DROP TABLE IF EXISTS `aircraft_categories`;
 CREATE TABLE IF NOT EXISTS `aircraft_categories` (
   `name` varchar(60) NOT NULL,
@@ -265,12 +252,12 @@ CREATE TABLE IF NOT EXISTS `aircraft_categories` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.aircraft_categories: ~2 rows (approximately)
+--  Data of table smile.aircraft_categories: ~2 rows (approximately)
 REPLACE INTO `aircraft_categories` (`name`, `label`) VALUES
 	('heli', 'Helicopters'),
 	('plane', 'Planes');
 
--- Dumping structure for table sulu.ak4y_fishing
+--  Table smile.ak4y_fishing
 DROP TABLE IF EXISTS `ak4y_fishing`;
 CREATE TABLE IF NOT EXISTS `ak4y_fishing` (
   `citizenid` varchar(255) DEFAULT NULL,
@@ -279,9 +266,9 @@ CREATE TABLE IF NOT EXISTS `ak4y_fishing` (
   `time` datetime DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.ak4y_fishing: ~0 rows (approximately)
+--  Data of table smile.ak4y_fishing: ~0 rows (approximately)
 
--- Dumping structure for table sulu.allhousing
+--  Table smile.allhousing
 DROP TABLE IF EXISTS `allhousing`;
 CREATE TABLE IF NOT EXISTS `allhousing` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -308,9 +295,9 @@ CREATE TABLE IF NOT EXISTS `allhousing` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.allhousing: ~0 rows (approximately)
+--  Data of table smile.allhousing: ~0 rows (approximately)
 
--- Dumping structure for table sulu.baninfo
+--  Table smile.baninfo
 DROP TABLE IF EXISTS `baninfo`;
 CREATE TABLE IF NOT EXISTS `baninfo` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -325,12 +312,12 @@ CREATE TABLE IF NOT EXISTS `baninfo` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
--- Dumping data for table sulu.baninfo: ~2 rows (approximately)
+--  Data of table smile.baninfo: ~2 rows (approximately)
 REPLACE INTO `baninfo` (`id`, `license`, `identifier`, `liveid`, `xblid`, `discord`, `playerip`, `playername`, `hwid`) VALUES
 	(1, 'license:c62d288446a7502bf5ebd6f3e485067f3f9b1ca5', 'steam:11000013e621c8b', 'live:1055518906763301', 'xbl:2535414487300931', 'discord:1002718140020568104', 'ip:192.168.1.99', 'Bun', '["3:ce0dbc0917fc5c81c048dc5d5f7d4d63302de098823c3b216fc94793712e852f","2:e9ccd73b9ce38a858bfab284817f7905007f34b2422f7a431243ae41dad1e158","4:d0395f0400a8c21066e85fe2cbf99695cdced8194b44291d888f06e95abf138b","4:9ae6986cf762e3b3fa73cd0f0ceede59fd896530ed6ed38280e555f9fd8c9e7f","4:36701e7f2b8b4573adb85567fac4c5cb3bb6f2461463e236b52464c14d59dbb1"]'),
 	(2, 'license:6b13b294a2e7ef1d332f4083d6b08da12112dbdc', 'steam:1100001147e8c1c', NULL, NULL, 'discord:847739460988174336', 'ip:118.69.77.73', 'Bin', '["2:47ba6880235f3c012c5ee7496cd9f8b5e4cc38ceb12d9408821fa9e227e76ae2","3:fa6a965c38aa2b4f7d1a1b88ff415b68d82113743055eb63971c5f99016b9e76","5:fd596430d90c9a70c757334ec3eb3e4ba2ffd7e54566229a7c77d48be036cf75","4:7f45cef7456e080bca515f6f1b3f394a900003eea779f78b1783ea7452702966","4:3b8ea81a71d65fb982978b02ad9e3cea3214af7918da209e74418aae0cfbdd3e","4:137ce2cc9be0904d831bcfccd67390b25c1c1b80a979fada9d6280c73e98ea2e"]');
 
--- Dumping structure for table sulu.banking
+--  Table smile.banking
 DROP TABLE IF EXISTS `banking`;
 CREATE TABLE IF NOT EXISTS `banking` (
   `identifier` varchar(46) DEFAULT NULL,
@@ -342,9 +329,9 @@ CREATE TABLE IF NOT EXISTS `banking` (
   PRIMARY KEY (`ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.banking: ~0 rows (approximately)
+--  Data of table smile.banking: ~0 rows (approximately)
 
--- Dumping structure for table sulu.banlist
+--  Table smile.banlist
 DROP TABLE IF EXISTS `banlist`;
 CREATE TABLE IF NOT EXISTS `banlist` (
   `license` varchar(100) NOT NULL,
@@ -363,9 +350,9 @@ CREATE TABLE IF NOT EXISTS `banlist` (
   PRIMARY KEY (`license`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
--- Dumping data for table sulu.banlist: ~0 rows (approximately)
+--  Data of table smile.banlist: ~0 rows (approximately)
 
--- Dumping structure for table sulu.banlisthistory
+--  Table smile.banlisthistory
 DROP TABLE IF EXISTS `banlisthistory`;
 CREATE TABLE IF NOT EXISTS `banlisthistory` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -386,9 +373,9 @@ CREATE TABLE IF NOT EXISTS `banlisthistory` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 
--- Dumping data for table sulu.banlisthistory: ~0 rows (approximately)
+--  Data of table smile.banlisthistory: ~0 rows (approximately)
 
--- Dumping structure for table sulu.billing
+--  Table smile.billing
 DROP TABLE IF EXISTS `billing`;
 CREATE TABLE IF NOT EXISTS `billing` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -401,9 +388,9 @@ CREATE TABLE IF NOT EXISTS `billing` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.billing: ~0 rows (approximately)
+--  Data of table smile.billing: ~0 rows (approximately)
 
--- Dumping structure for table sulu.blacklistch
+--  Table smile.blacklistch
 DROP TABLE IF EXISTS `blacklistch`;
 CREATE TABLE IF NOT EXISTS `blacklistch` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -415,9 +402,9 @@ CREATE TABLE IF NOT EXISTS `blacklistch` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.blacklistch: ~0 rows (approximately)
+--  Data of table smile.blacklistch: ~0 rows (approximately)
 
--- Dumping structure for table sulu.blacklistmed
+--  Table smile.blacklistmed
 DROP TABLE IF EXISTS `blacklistmed`;
 CREATE TABLE IF NOT EXISTS `blacklistmed` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -429,9 +416,9 @@ CREATE TABLE IF NOT EXISTS `blacklistmed` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.blacklistmed: ~0 rows (approximately)
+--  Data of table smile.blacklistmed: ~0 rows (approximately)
 
--- Dumping structure for table sulu.cardealer_vehicles
+--  Table smile.cardealer_vehicles
 DROP TABLE IF EXISTS `cardealer_vehicles`;
 CREATE TABLE IF NOT EXISTS `cardealer_vehicles` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -440,9 +427,9 @@ CREATE TABLE IF NOT EXISTS `cardealer_vehicles` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.cardealer_vehicles: ~0 rows (approximately)
+--  Data of table smile.cardealer_vehicles: ~0 rows (approximately)
 
--- Dumping structure for table sulu.darkchat_messages
+--  Table smile.darkchat_messages
 DROP TABLE IF EXISTS `darkchat_messages`;
 CREATE TABLE IF NOT EXISTS `darkchat_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -454,9 +441,9 @@ CREATE TABLE IF NOT EXISTS `darkchat_messages` (
   KEY `id` (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.darkchat_messages: ~0 rows (approximately)
+--  Data of table smile.darkchat_messages: ~0 rows (approximately)
 
--- Dumping structure for table sulu.datastore
+--  Table smile.datastore
 DROP TABLE IF EXISTS `datastore`;
 CREATE TABLE IF NOT EXISTS `datastore` (
   `name` varchar(60) NOT NULL,
@@ -465,7 +452,7 @@ CREATE TABLE IF NOT EXISTS `datastore` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.datastore: ~9 rows (approximately)
+--  Data of table smile.datastore: ~9 rows (approximately)
 REPLACE INTO `datastore` (`name`, `label`, `shared`) VALUES
 	('property', 'Property', 0),
 	('society_ambulance', 'EMS', 1),
@@ -477,7 +464,7 @@ REPLACE INTO `datastore` (`name`, `label`, `shared`) VALUES
 	('user_helmet', 'Helmet', 0),
 	('user_mask', 'Mask', 0);
 
--- Dumping structure for table sulu.datastore_data
+--  Table smile.datastore_data
 DROP TABLE IF EXISTS `datastore_data`;
 CREATE TABLE IF NOT EXISTS `datastore_data` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -489,7 +476,7 @@ CREATE TABLE IF NOT EXISTS `datastore_data` (
   KEY `index_datastore_data_name` (`name`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.datastore_data: ~5 rows (approximately)
+--  Data of table smile.datastore_data: ~5 rows (approximately)
 REPLACE INTO `datastore_data` (`id`, `name`, `owner`, `data`) VALUES
 	(1, 'society_police', NULL, '{}'),
 	(2, 'society_ambulance', NULL, '{}'),
@@ -497,7 +484,7 @@ REPLACE INTO `datastore_data` (`id`, `name`, `owner`, `data`) VALUES
 	(4, 'society_taxi', NULL, '{}'),
 	(5, 'property', NULL, '{}');
 
--- Dumping structure for table sulu.fine_types
+--  Table smile.fine_types
 DROP TABLE IF EXISTS `fine_types`;
 CREATE TABLE IF NOT EXISTS `fine_types` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -507,7 +494,7 @@ CREATE TABLE IF NOT EXISTS `fine_types` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=53 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.fine_types: ~52 rows (approximately)
+--  Data of table smile.fine_types: ~52 rows (approximately)
 REPLACE INTO `fine_types` (`id`, `label`, `amount`, `category`) VALUES
 	(1, 'Misuse of a horn', 30, 0),
 	(2, 'Illegally Crossing a continuous Line', 40, 0),
@@ -562,7 +549,7 @@ REPLACE INTO `fine_types` (`id`, `label`, `amount`, `category`) VALUES
 	(51, 'Involuntary manslaughter', 1800, 3),
 	(52, 'Fraud', 2000, 2);
 
--- Dumping structure for table sulu.impound
+--  Table smile.impound
 DROP TABLE IF EXISTS `impound`;
 CREATE TABLE IF NOT EXISTS `impound` (
   `officer` varchar(50) DEFAULT NULL,
@@ -570,12 +557,12 @@ CREATE TABLE IF NOT EXISTS `impound` (
   `plate` varchar(50) DEFAULT NULL,
   `fine` int(11) DEFAULT 0,
   `reason` longtext DEFAULT NULL,
-  `date` longtext DEFAULT '0'
+  `date` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.impound: ~0 rows (approximately)
+--  Data of table smile.impound: ~0 rows (approximately)
 
--- Dumping structure for table sulu.instagram_account
+--  Table smile.instagram_account
 DROP TABLE IF EXISTS `instagram_account`;
 CREATE TABLE IF NOT EXISTS `instagram_account` (
   `id` varchar(90) NOT NULL,
@@ -588,18 +575,18 @@ CREATE TABLE IF NOT EXISTS `instagram_account` (
   `verify` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.instagram_account: ~0 rows (approximately)
+--  Data of table smile.instagram_account: ~0 rows (approximately)
 
--- Dumping structure for table sulu.instagram_followers
+--  Table smile.instagram_followers
 DROP TABLE IF EXISTS `instagram_followers`;
 CREATE TABLE IF NOT EXISTS `instagram_followers` (
   `username` varchar(50) NOT NULL,
   `followed` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.instagram_followers: ~0 rows (approximately)
+--  Data of table smile.instagram_followers: ~0 rows (approximately)
 
--- Dumping structure for table sulu.instagram_posts
+--  Table smile.instagram_posts
 DROP TABLE IF EXISTS `instagram_posts`;
 CREATE TABLE IF NOT EXISTS `instagram_posts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -613,9 +600,9 @@ CREATE TABLE IF NOT EXISTS `instagram_posts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.instagram_posts: ~0 rows (approximately)
+--  Data of table smile.instagram_posts: ~0 rows (approximately)
 
--- Dumping structure for table sulu.instagram_stories
+--  Table smile.instagram_stories
 DROP TABLE IF EXISTS `instagram_stories`;
 CREATE TABLE IF NOT EXISTS `instagram_stories` (
   `owner` varchar(50) NOT NULL,
@@ -623,9 +610,9 @@ CREATE TABLE IF NOT EXISTS `instagram_stories` (
   PRIMARY KEY (`owner`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=armscii8 COLLATE=armscii8_bin;
 
--- Dumping data for table sulu.instagram_stories: ~0 rows (approximately)
+--  Data of table smile.instagram_stories: ~0 rows (approximately)
 
--- Dumping structure for table sulu.insta_stories
+--  Table smile.insta_stories
 DROP TABLE IF EXISTS `insta_stories`;
 CREATE TABLE IF NOT EXISTS `insta_stories` (
   `username` varchar(50) DEFAULT NULL,
@@ -636,9 +623,9 @@ CREATE TABLE IF NOT EXISTS `insta_stories` (
   `created` time DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.insta_stories: ~0 rows (approximately)
+--  Data of table smile.insta_stories: ~0 rows (approximately)
 
--- Dumping structure for table sulu.items
+--  Table smile.items
 DROP TABLE IF EXISTS `items`;
 CREATE TABLE IF NOT EXISTS `items` (
   `name` varchar(50) NOT NULL,
@@ -649,9 +636,9 @@ CREATE TABLE IF NOT EXISTS `items` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.items: ~0 rows (approximately)
+--  Data of table smile.items: ~0 rows (approximately)
 
--- Dumping structure for table sulu.jobs
+--  Table smile.jobs
 DROP TABLE IF EXISTS `jobs`;
 CREATE TABLE IF NOT EXISTS `jobs` (
   `name` varchar(50) NOT NULL,
@@ -669,7 +656,7 @@ CREATE TABLE IF NOT EXISTS `jobs` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.jobs: ~27 rows (approximately)
+--  Data of table smile.jobs: ~27 rows (approximately)
 REPLACE INTO `jobs` (`name`, `label`, `whitelisted`, `SecondaryJob`, `inventory_pos`, `society_data`, `job_logo`, `job_slogan`, `job_type`, `level`, `point`, `jobPoint`) VALUES
 	('admin', 'Chính Phủ', 0, 0, NULL, NULL, NULL, NULL, 2, 0, 0, 0),
 	('ambulance', 'Ngành', 0, 0, NULL, NULL, NULL, NULL, 2, 0, 0, 0),
@@ -699,7 +686,7 @@ REPLACE INTO `jobs` (`name`, `label`, `whitelisted`, `SecondaryJob`, `inventory_
 	('tailor', 'Thợ May', 0, 0, NULL, NULL, NULL, NULL, 2, 0, 0, 0),
 	('unemployed', 'Thất Nghiệp', 0, 1, NULL, NULL, NULL, NULL, 2, 0, 0, 0);
 
--- Dumping structure for table sulu.job_grades
+--  Table smile.job_grades
 DROP TABLE IF EXISTS `job_grades`;
 CREATE TABLE IF NOT EXISTS `job_grades` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -713,7 +700,7 @@ CREATE TABLE IF NOT EXISTS `job_grades` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=226 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.job_grades: ~74 rows (approximately)
+--  Data of table smile.job_grades: ~74 rows (approximately)
 REPLACE INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`, `skin_male`, `skin_female`) VALUES
 	(1, 'unemployed', 0, 'unemployed', 'Thất Nghiệp', 100, '{}', '{}'),
 	(2, 'nogang', 0, 'nogang', 'Chưa Gia Nhập', 0, '{}', '{}'),
@@ -790,7 +777,7 @@ REPLACE INTO `job_grades` (`id`, `job_name`, `grade`, `name`, `label`, `salary`,
 	(224, 'gangop', 3, 'daica', 'Đại ca', 0, '', ''),
 	(225, 'gangop', 4, 'boss', 'Ông trùm', 0, '', '');
 
--- Dumping structure for table sulu.licenses
+--  Table smile.licenses
 DROP TABLE IF EXISTS `licenses`;
 CREATE TABLE IF NOT EXISTS `licenses` (
   `type` varchar(60) NOT NULL,
@@ -798,7 +785,7 @@ CREATE TABLE IF NOT EXISTS `licenses` (
   PRIMARY KEY (`type`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.licenses: ~7 rows (approximately)
+--  Data of table smile.licenses: ~7 rows (approximately)
 REPLACE INTO `licenses` (`type`, `label`) VALUES
 	('boat', 'Boat License'),
 	('dmv', 'Driving Permit'),
@@ -808,7 +795,7 @@ REPLACE INTO `licenses` (`type`, `label`) VALUES
 	('weapon', 'Weapon License'),
 	('weed_processing', 'Weed Processing License');
 
--- Dumping structure for table sulu.management_outfits
+--  Table smile.management_outfits
 DROP TABLE IF EXISTS `management_outfits`;
 CREATE TABLE IF NOT EXISTS `management_outfits` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -823,9 +810,9 @@ CREATE TABLE IF NOT EXISTS `management_outfits` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.management_outfits: ~0 rows (approximately)
+--  Data of table smile.management_outfits: ~0 rows (approximately)
 
--- Dumping structure for table sulu.market
+--  Table smile.market
 DROP TABLE IF EXISTS `market`;
 CREATE TABLE IF NOT EXISTS `market` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -839,9 +826,9 @@ CREATE TABLE IF NOT EXISTS `market` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.market: ~0 rows (approximately)
+--  Data of table smile.market: ~0 rows (approximately)
 
--- Dumping structure for table sulu.multicharacter_slots
+--  Table smile.multicharacter_slots
 DROP TABLE IF EXISTS `multicharacter_slots`;
 CREATE TABLE IF NOT EXISTS `multicharacter_slots` (
   `identifier` varchar(46) NOT NULL,
@@ -850,9 +837,9 @@ CREATE TABLE IF NOT EXISTS `multicharacter_slots` (
   KEY `slots` (`slots`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.multicharacter_slots: ~0 rows (approximately)
+--  Data of table smile.multicharacter_slots: ~0 rows (approximately)
 
--- Dumping structure for table sulu.nhanqua_online
+--  Table smile.nhanqua_online
 DROP TABLE IF EXISTS `nhanqua_online`;
 CREATE TABLE IF NOT EXISTS `nhanqua_online` (
   `identifier` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_bin DEFAULT NULL,
@@ -867,12 +854,12 @@ CREATE TABLE IF NOT EXISTS `nhanqua_online` (
   `day8` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.nhanqua_online: ~2 rows (approximately)
+--  Data of table smile.nhanqua_online: ~2 rows (approximately)
 REPLACE INTO `nhanqua_online` (`identifier`, `online`, `day1`, `day2`, `day3`, `day4`, `day5`, `day6`, `day7`, `day8`) VALUES
 	('steam:11000013e621c8b', 20, '', '', '', '', '', '', '', ''),
 	('steam:1100001147e8c1c', 30, '', '', '', '', '', '', '', '');
 
--- Dumping structure for table sulu.occupation
+--  Table smile.occupation
 DROP TABLE IF EXISTS `occupation`;
 CREATE TABLE IF NOT EXISTS `occupation` (
   `name` char(50) DEFAULT NULL,
@@ -881,16 +868,16 @@ CREATE TABLE IF NOT EXISTS `occupation` (
   `nameCD` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table sulu.occupation: ~0 rows (approximately)
+--  Data of table smile.occupation: ~0 rows (approximately)
 
--- Dumping structure for table sulu.occupation_point
+--  Table smile.occupation_point
 DROP TABLE IF EXISTS `occupation_point`;
 CREATE TABLE IF NOT EXISTS `occupation_point` (
   `gang_name` char(50) DEFAULT NULL,
   `point` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table sulu.occupation_point: ~6 rows (approximately)
+--  Data of table smile.occupation_point: ~6 rows (approximately)
 REPLACE INTO `occupation_point` (`gang_name`, `point`) VALUES
 	('gangptg', 0),
 	('gangmxc', 0),
@@ -899,7 +886,7 @@ REPLACE INTO `occupation_point` (`gang_name`, `point`) VALUES
 	('gangunc', 0),
 	('gangctb', 0);
 
--- Dumping structure for table sulu.onduty
+--  Table smile.onduty
 DROP TABLE IF EXISTS `onduty`;
 CREATE TABLE IF NOT EXISTS `onduty` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -910,14 +897,14 @@ CREATE TABLE IF NOT EXISTS `onduty` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.onduty: ~4 rows (approximately)
+--  Data of table smile.onduty: ~4 rows (approximately)
 REPLACE INTO `onduty` (`id`, `name`, `job`, `steam`, `time`) VALUES
 	(1, 'Bin', 'mechanic', 'steam:1100001147e8c1c', 5),
 	(2, 'Bun', 'mechanic', 'steam:11000013e621c8b', 5),
 	(3, 'Bun', 'ambulance', 'steam:11000013e621c8b', 1),
 	(4, 'Bin', 'ambulance', 'steam:1100001147e8c1c', 8);
 
--- Dumping structure for table sulu.outfit
+--  Table smile.outfit
 DROP TABLE IF EXISTS `outfit`;
 CREATE TABLE IF NOT EXISTS `outfit` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -927,9 +914,9 @@ CREATE TABLE IF NOT EXISTS `outfit` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_vietnamese_ci;
 
--- Dumping data for table sulu.outfit: ~0 rows (approximately)
+--  Data of table smile.outfit: ~0 rows (approximately)
 
--- Dumping structure for table sulu.owned_vehicles
+--  Table smile.owned_vehicles
 DROP TABLE IF EXISTS `owned_vehicles`;
 CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   `owner` varchar(46) DEFAULT NULL,
@@ -950,11 +937,11 @@ CREATE TABLE IF NOT EXISTS `owned_vehicles` (
   PRIMARY KEY (`plate`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.owned_vehicles: ~0 rows (approximately)
+--  Data of table smile.owned_vehicles: ~0 rows (approximately)
 REPLACE INTO `owned_vehicles` (`owner`, `model`, `plate`, `vehicle`, `type`, `job`, `stored`, `parking`, `pound`, `glovebox`, `trunk`, `label`, `soluong`, `impound`, `mileage`) VALUES
 	('11000013e621c8b', 'SANCHEZ02', 'BDD 526', '{"modHood":-1,"modDial":-1,"fuelLevel":63.1,"modRightFender":-1,"modOrnaments":-1,"modHydrolic":-1,"modArchCover":-1,"modTrimA":-1,"modAerials":-1,"modDoorR":-1,"color1":2,"modFender":-1,"modEngineBlock":-1,"tankHealth":1000.0,"neonEnabled":[false,false,false,false],"doorsBroken":{"0":false,"1":false},"modSideSkirt":-1,"modSuspension":-1,"modPlateHolder":-1,"windowTint":-1,"dirtLevel":11.2,"modSpeakers":-1,"tyreBurst":{"4":false,"0":false},"modExhaust":-1,"modAPlate":-1,"tyreSmokeColor":[255,255,255],"modFrontBumper":-1,"model":-1453280962,"interiorColor":0,"xenonColor":255,"modStruts":-1,"modHorns":-1,"modShifterLeavers":-1,"neonColor":[255,0,255],"modTrimB":-1,"modTurbo":false,"pearlescentColor":2,"modRearBumper":-1,"extras":[],"modArmor":-1,"modSeats":-1,"modGrille":-1,"plateIndex":4,"modTrunk":-1,"modFrontWheels":-1,"modAirFilter":-1,"bodyHealth":1000.0,"modLightbar":-1,"engineHealth":1000.0,"dashboardColor":0,"modBrakes":-1,"wheels":6,"modSteeringWheel":-1,"modXenon":false,"modDoorSpeaker":-1,"modTransmission":-1,"modLivery":-1,"modTank":-1,"modBackWheels":-1,"modVanityPlate":-1,"wheelColor":0,"modEngine":-1,"color2":2,"modFrame":-1,"modSmokeEnabled":1,"windowsBroken":{"4":true,"5":true,"2":true,"3":true,"0":true,"1":true,"6":true,"7":true},"modDashboard":-1,"plate":"BDD 526","modRoof":-1,"modSpoilers":-1}', 'car', NULL, 0, NULL, NULL, NULL, NULL, NULL, 2, 0, 0);
 
--- Dumping structure for table sulu.ox_doorlock
+--  Table smile.ox_doorlock
 DROP TABLE IF EXISTS `ox_doorlock`;
 CREATE TABLE IF NOT EXISTS `ox_doorlock` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -963,9 +950,9 @@ CREATE TABLE IF NOT EXISTS `ox_doorlock` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.ox_doorlock: ~0 rows (approximately)
+--  Data of table smile.ox_doorlock: ~0 rows (approximately)
 
--- Dumping structure for table sulu.ox_inventory
+--  Table smile.ox_inventory
 DROP TABLE IF EXISTS `ox_inventory`;
 CREATE TABLE IF NOT EXISTS `ox_inventory` (
   `owner` varchar(46) DEFAULT NULL,
@@ -975,11 +962,11 @@ CREATE TABLE IF NOT EXISTS `ox_inventory` (
   UNIQUE KEY `owner` (`owner`,`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.ox_inventory: ~0 rows (approximately)
+--  Data of table smile.ox_inventory: ~0 rows (approximately)
 REPLACE INTO `ox_inventory` (`owner`, `name`, `data`, `lastupdated`) VALUES
 	('', 'police1', NULL, '2024-01-28 15:05:46');
 
--- Dumping structure for table sulu.phone_accounts
+--  Table smile.phone_accounts
 DROP TABLE IF EXISTS `phone_accounts`;
 CREATE TABLE IF NOT EXISTS `phone_accounts` (
   `app` varchar(50) NOT NULL,
@@ -992,9 +979,9 @@ CREATE TABLE IF NOT EXISTS `phone_accounts` (
   `avatar` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.phone_accounts: ~0 rows (approximately)
+--  Data of table smile.phone_accounts: ~0 rows (approximately)
 
--- Dumping structure for table sulu.phone_alertjobs
+--  Table smile.phone_alertjobs
 DROP TABLE IF EXISTS `phone_alertjobs`;
 CREATE TABLE IF NOT EXISTS `phone_alertjobs` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1005,9 +992,9 @@ CREATE TABLE IF NOT EXISTS `phone_alertjobs` (
   UNIQUE KEY `job` (`job`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.phone_alertjobs: ~0 rows (approximately)
+--  Data of table smile.phone_alertjobs: ~0 rows (approximately)
 
--- Dumping structure for table sulu.phone_chatrooms
+--  Table smile.phone_chatrooms
 DROP TABLE IF EXISTS `phone_chatrooms`;
 CREATE TABLE IF NOT EXISTS `phone_chatrooms` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -1025,9 +1012,9 @@ CREATE TABLE IF NOT EXISTS `phone_chatrooms` (
   UNIQUE KEY `room_code` (`room_code`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.phone_chatrooms: ~0 rows (approximately)
+--  Data of table smile.phone_chatrooms: ~0 rows (approximately)
 
--- Dumping structure for table sulu.phone_chatroom_messages
+--  Table smile.phone_chatroom_messages
 DROP TABLE IF EXISTS `phone_chatroom_messages`;
 CREATE TABLE IF NOT EXISTS `phone_chatroom_messages` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -1040,9 +1027,9 @@ CREATE TABLE IF NOT EXISTS `phone_chatroom_messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.phone_chatroom_messages: ~0 rows (approximately)
+--  Data of table smile.phone_chatroom_messages: ~0 rows (approximately)
 
--- Dumping structure for table sulu.phone_chats
+--  Table smile.phone_chats
 DROP TABLE IF EXISTS `phone_chats`;
 CREATE TABLE IF NOT EXISTS `phone_chats` (
   `app` varchar(50) NOT NULL,
@@ -1051,9 +1038,9 @@ CREATE TABLE IF NOT EXISTS `phone_chats` (
   `created` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.phone_chats: ~0 rows (approximately)
+--  Data of table smile.phone_chats: ~0 rows (approximately)
 
--- Dumping structure for table sulu.phone_invoices
+--  Table smile.phone_invoices
 DROP TABLE IF EXISTS `phone_invoices`;
 CREATE TABLE IF NOT EXISTS `phone_invoices` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
@@ -1065,9 +1052,9 @@ CREATE TABLE IF NOT EXISTS `phone_invoices` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table sulu.phone_invoices: ~0 rows (approximately)
+--  Data of table smile.phone_invoices: ~0 rows (approximately)
 
--- Dumping structure for table sulu.phone_messages
+--  Table smile.phone_messages
 DROP TABLE IF EXISTS `phone_messages`;
 CREATE TABLE IF NOT EXISTS `phone_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1081,9 +1068,9 @@ CREATE TABLE IF NOT EXISTS `phone_messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.phone_messages: ~0 rows (approximately)
+--  Data of table smile.phone_messages: ~0 rows (approximately)
 
--- Dumping structure for table sulu.phone_news
+--  Table smile.phone_news
 DROP TABLE IF EXISTS `phone_news`;
 CREATE TABLE IF NOT EXISTS `phone_news` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1095,9 +1082,9 @@ CREATE TABLE IF NOT EXISTS `phone_news` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.phone_news: ~0 rows (approximately)
+--  Data of table smile.phone_news: ~0 rows (approximately)
 
--- Dumping structure for table sulu.phone_notifies
+--  Table smile.phone_notifies
 DROP TABLE IF EXISTS `phone_notifies`;
 CREATE TABLE IF NOT EXISTS `phone_notifies` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1109,9 +1096,9 @@ CREATE TABLE IF NOT EXISTS `phone_notifies` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2472 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.phone_notifies: ~0 rows (approximately)
+--  Data of table smile.phone_notifies: ~0 rows (approximately)
 
--- Dumping structure for table sulu.playerskins
+--  Table smile.playerskins
 DROP TABLE IF EXISTS `playerskins`;
 CREATE TABLE IF NOT EXISTS `playerskins` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1124,9 +1111,9 @@ CREATE TABLE IF NOT EXISTS `playerskins` (
   KEY `active` (`active`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
--- Dumping data for table sulu.playerskins: ~0 rows (approximately)
+--  Data of table smile.playerskins: ~0 rows (approximately)
 
--- Dumping structure for table sulu.player_contacts
+--  Table smile.player_contacts
 DROP TABLE IF EXISTS `player_contacts`;
 CREATE TABLE IF NOT EXISTS `player_contacts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1142,7 +1129,7 @@ CREATE TABLE IF NOT EXISTS `player_contacts` (
   KEY `identifier` (`identifier`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=153 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.player_contacts: ~112 rows (approximately)
+--  Data of table smile.player_contacts: ~112 rows (approximately)
 REPLACE INTO `player_contacts` (`id`, `identifier`, `name`, `number`, `iban`, `display`, `note`, `pp`, `isBlocked`) VALUES
 	(38, '553237203', 'GỖ', '553310299', '0', NULL, '', './img/app_details/default.png', NULL),
 	(39, '9999', 'Bạch Long | Momo', '03191951', '0', NULL, '', './img/app_details/default.png', NULL),
@@ -1257,7 +1244,7 @@ REPLACE INTO `player_contacts` (`id`, `identifier`, `name`, `number`, `iban`, `d
 	(151, '03514788', 'cc', '03366726', '0', NULL, '', './img/app_details/default.png', NULL),
 	(152, '03695437', ' hong bt ', '03220992', '0', NULL, '', '', NULL);
 
--- Dumping structure for table sulu.player_gallery
+--  Table smile.player_gallery
 DROP TABLE IF EXISTS `player_gallery`;
 CREATE TABLE IF NOT EXISTS `player_gallery` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1268,9 +1255,9 @@ CREATE TABLE IF NOT EXISTS `player_gallery` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.player_gallery: ~0 rows (approximately)
+--  Data of table smile.player_gallery: ~0 rows (approximately)
 
--- Dumping structure for table sulu.player_mails
+--  Table smile.player_mails
 DROP TABLE IF EXISTS `player_mails`;
 CREATE TABLE IF NOT EXISTS `player_mails` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1286,9 +1273,9 @@ CREATE TABLE IF NOT EXISTS `player_mails` (
   KEY `identifier` (`identifier`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.player_mails: ~0 rows (approximately)
+--  Data of table smile.player_mails: ~0 rows (approximately)
 
--- Dumping structure for table sulu.player_notes
+--  Table smile.player_notes
 DROP TABLE IF EXISTS `player_notes`;
 CREATE TABLE IF NOT EXISTS `player_notes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1298,12 +1285,12 @@ CREATE TABLE IF NOT EXISTS `player_notes` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.player_notes: ~2 rows (approximately)
+--  Data of table smile.player_notes: ~2 rows (approximately)
 REPLACE INTO `player_notes` (`id`, `identifier`, `baslik`, `aciklama`) VALUES
 	(5, '11000011691ce4f', 'Vay Tien ', 'WAP -600K\n'),
 	(6, '1100001588a38bb', 'awdwa', 'Description...');
 
--- Dumping structure for table sulu.player_outfits
+--  Table smile.player_outfits
 DROP TABLE IF EXISTS `player_outfits`;
 CREATE TABLE IF NOT EXISTS `player_outfits` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1317,9 +1304,9 @@ CREATE TABLE IF NOT EXISTS `player_outfits` (
   KEY `citizenid` (`citizenid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.player_outfits: ~0 rows (approximately)
+--  Data of table smile.player_outfits: ~0 rows (approximately)
 
--- Dumping structure for table sulu.player_outfit_codes
+--  Table smile.player_outfit_codes
 DROP TABLE IF EXISTS `player_outfit_codes`;
 CREATE TABLE IF NOT EXISTS `player_outfit_codes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1329,9 +1316,9 @@ CREATE TABLE IF NOT EXISTS `player_outfit_codes` (
   KEY `FK_player_outfit_codes_player_outfits` (`outfitid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.player_outfit_codes: ~0 rows (approximately)
+--  Data of table smile.player_outfit_codes: ~0 rows (approximately)
 
--- Dumping structure for table sulu.poker_stats
+--  Table smile.poker_stats
 DROP TABLE IF EXISTS `poker_stats`;
 CREATE TABLE IF NOT EXISTS `poker_stats` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1341,9 +1328,9 @@ CREATE TABLE IF NOT EXISTS `poker_stats` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.poker_stats: ~0 rows (approximately)
+--  Data of table smile.poker_stats: ~0 rows (approximately)
 
--- Dumping structure for table sulu.pug_paintball
+--  Table smile.pug_paintball
 DROP TABLE IF EXISTS `pug_paintball`;
 CREATE TABLE IF NOT EXISTS `pug_paintball` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1355,9 +1342,9 @@ CREATE TABLE IF NOT EXISTS `pug_paintball` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.pug_paintball: ~0 rows (approximately)
+--  Data of table smile.pug_paintball: ~0 rows (approximately)
 
--- Dumping structure for table sulu.rented_vehicles
+--  Table smile.rented_vehicles
 DROP TABLE IF EXISTS `rented_vehicles`;
 CREATE TABLE IF NOT EXISTS `rented_vehicles` (
   `vehicle` varchar(60) NOT NULL,
@@ -1369,9 +1356,9 @@ CREATE TABLE IF NOT EXISTS `rented_vehicles` (
   PRIMARY KEY (`plate`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.rented_vehicles: ~0 rows (approximately)
+--  Data of table smile.rented_vehicles: ~0 rows (approximately)
 
--- Dumping structure for table sulu.society_moneywash
+--  Table smile.society_moneywash
 DROP TABLE IF EXISTS `society_moneywash`;
 CREATE TABLE IF NOT EXISTS `society_moneywash` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1381,9 +1368,9 @@ CREATE TABLE IF NOT EXISTS `society_moneywash` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.society_moneywash: ~0 rows (approximately)
+--  Data of table smile.society_moneywash: ~0 rows (approximately)
 
--- Dumping structure for table sulu.tiktok_users
+--  Table smile.tiktok_users
 DROP TABLE IF EXISTS `tiktok_users`;
 CREATE TABLE IF NOT EXISTS `tiktok_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1391,19 +1378,19 @@ CREATE TABLE IF NOT EXISTS `tiktok_users` (
   `phone` varchar(50) NOT NULL DEFAULT '0',
   `pp` text DEFAULT NULL,
   `name` varchar(50) NOT NULL DEFAULT '0',
-  `bio` text NOT NULL DEFAULT '',
+  `bio` text NOT NULL,
   `birthday` varchar(50) NOT NULL DEFAULT '0',
-  `videos` text NOT NULL DEFAULT '{}',
-  `followers` text NOT NULL,
-  `following` text NOT NULL,
-  `liked` text NOT NULL,
+  `videos` text,
+  `followers` text,
+  `following` text,
+  `liked` text,
   PRIMARY KEY (`id`) USING BTREE,
   KEY `id` (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.tiktok_users: ~0 rows (approximately)
+--  Data of table smile.tiktok_users: ~0 rows (approximately)
 
--- Dumping structure for table sulu.tiktok_videos
+--  Table smile.tiktok_videos
 DROP TABLE IF EXISTS `tiktok_videos`;
 CREATE TABLE IF NOT EXISTS `tiktok_videos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1414,9 +1401,9 @@ CREATE TABLE IF NOT EXISTS `tiktok_videos` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.tiktok_videos: ~0 rows (approximately)
+--  Data of table smile.tiktok_videos: ~0 rows (approximately)
 
--- Dumping structure for table sulu.tinder_accounts
+--  Table smile.tinder_accounts
 DROP TABLE IF EXISTS `tinder_accounts`;
 CREATE TABLE IF NOT EXISTS `tinder_accounts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1432,9 +1419,9 @@ CREATE TABLE IF NOT EXISTS `tinder_accounts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.tinder_accounts: ~0 rows (approximately)
+--  Data of table smile.tinder_accounts: ~0 rows (approximately)
 
--- Dumping structure for table sulu.tinder_likes
+--  Table smile.tinder_likes
 DROP TABLE IF EXISTS `tinder_likes`;
 CREATE TABLE IF NOT EXISTS `tinder_likes` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1443,21 +1430,21 @@ CREATE TABLE IF NOT EXISTS `tinder_likes` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.tinder_likes: ~0 rows (approximately)
+--  Data of table smile.tinder_likes: ~0 rows (approximately)
 
--- Dumping structure for table sulu.tinder_messages
+--  Table smile.tinder_messages
 DROP TABLE IF EXISTS `tinder_messages`;
 CREATE TABLE IF NOT EXISTS `tinder_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `phone` varchar(50) NOT NULL,
   `number` longtext NOT NULL,
-  `messages` longtext DEFAULT '{}',
+  `messages` longtext,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.tinder_messages: ~0 rows (approximately)
+--  Data of table smile.tinder_messages: ~0 rows (approximately)
 
--- Dumping structure for table sulu.trucker_available_contracts
+--  Table smile.trucker_available_contracts
 DROP TABLE IF EXISTS `trucker_available_contracts`;
 CREATE TABLE IF NOT EXISTS `trucker_available_contracts` (
   `contract_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
@@ -1474,7 +1461,7 @@ CREATE TABLE IF NOT EXISTS `trucker_available_contracts` (
   PRIMARY KEY (`contract_id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=255852 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.trucker_available_contracts: ~59 rows (approximately)
+--  Data of table smile.trucker_available_contracts: ~59 rows (approximately)
 REPLACE INTO `trucker_available_contracts` (`contract_id`, `contract_type`, `contract_name`, `coords_index`, `price_per_km`, `cargo_type`, `fragile`, `valuable`, `fast`, `truck`, `trailer`) VALUES
 	(255792, 1, 'Vận chuyển gỗ tinh chế', 98, 2939, 0, 0, 0, 0, NULL, 'docktrailer'),
 	(255793, 0, 'Vận chuyển sản phẩm nhập khẩu', 176, 1553, 0, 0, 1, 0, 'phantom', 'docktrailer'),
@@ -1537,7 +1524,7 @@ REPLACE INTO `trucker_available_contracts` (`contract_id`, `contract_type`, `con
 	(255850, 0, 'Vận chuyển vật liệu nổ', 185, 1464, 1, 1, 0, 0, 'phantom', 'trailers4'),
 	(255851, 1, 'Vận chuyển thủy tinh', 4, 2318, 0, 1, 0, 0, NULL, 'docktrailer');
 
--- Dumping structure for table sulu.trucker_drivers
+--  Table smile.trucker_drivers
 DROP TABLE IF EXISTS `trucker_drivers`;
 CREATE TABLE IF NOT EXISTS `trucker_drivers` (
   `driver_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -1554,7 +1541,7 @@ CREATE TABLE IF NOT EXISTS `trucker_drivers` (
   PRIMARY KEY (`driver_id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=3515 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.trucker_drivers: ~19 rows (approximately)
+--  Data of table smile.trucker_drivers: ~19 rows (approximately)
 REPLACE INTO `trucker_drivers` (`driver_id`, `user_id`, `name`, `product_type`, `distance`, `valuable`, `fragile`, `fast`, `price`, `price_per_km`, `img`) VALUES
 	(3495, NULL, 'Jordan Hyde', 3, 1, 5, 0, 1, 15209, 771, 'https://bootdey.com/img/Content/avatar/avatar8.png'),
 	(3496, NULL, 'Spencer Camacho', 2, 5, 3, 2, 3, 18419, 1040, 'https://bootdey.com/img/Content/avatar/avatar4.png'),
@@ -1577,7 +1564,7 @@ REPLACE INTO `trucker_drivers` (`driver_id`, `user_id`, `name`, `product_type`, 
 	(3513, NULL, 'Mari Brady', 2, 6, 0, 6, 6, 20414, 1108, 'https://bootdey.com/img/Content/avatar/avatar8.png'),
 	(3514, NULL, 'Candice Patterson', 6, 5, 4, 1, 2, 20566, 992, 'https://bootdey.com/img/Content/avatar/avatar6.png');
 
--- Dumping structure for table sulu.trucker_loans
+--  Table smile.trucker_loans
 DROP TABLE IF EXISTS `trucker_loans`;
 CREATE TABLE IF NOT EXISTS `trucker_loans` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -1590,9 +1577,9 @@ CREATE TABLE IF NOT EXISTS `trucker_loans` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.trucker_loans: ~0 rows (approximately)
+--  Data of table smile.trucker_loans: ~0 rows (approximately)
 
--- Dumping structure for table sulu.trucker_trucks
+--  Table smile.trucker_trucks
 DROP TABLE IF EXISTS `trucker_trucks`;
 CREATE TABLE IF NOT EXISTS `trucker_trucks` (
   `truck_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -1606,9 +1593,9 @@ CREATE TABLE IF NOT EXISTS `trucker_trucks` (
   PRIMARY KEY (`truck_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.trucker_trucks: ~0 rows (approximately)
+--  Data of table smile.trucker_trucks: ~0 rows (approximately)
 
--- Dumping structure for table sulu.trucker_users
+--  Table smile.trucker_users
 DROP TABLE IF EXISTS `trucker_users`;
 CREATE TABLE IF NOT EXISTS `trucker_users` (
   `user_id` varchar(50) NOT NULL,
@@ -1627,11 +1614,11 @@ CREATE TABLE IF NOT EXISTS `trucker_users` (
   PRIMARY KEY (`user_id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.trucker_users: ~0 rows (approximately)
+--  Data of table smile.trucker_users: ~0 rows (approximately)
 REPLACE INTO `trucker_users` (`user_id`, `money`, `total_earned`, `finished_deliveries`, `exp`, `traveled_distance`, `skill_points`, `product_type`, `distance`, `valuable`, `fragile`, `fast`, `loan_notify`) VALUES
 	('1100001147e8c1c', 3953, 3953, 1, 19, 2.29, 0, 0, 0, 0, 0, 0, b'0');
 
--- Dumping structure for table sulu.twitter_account
+--  Table smile.twitter_account
 DROP TABLE IF EXISTS `twitter_account`;
 CREATE TABLE IF NOT EXISTS `twitter_account` (
   `id` varchar(90) NOT NULL,
@@ -1642,9 +1629,9 @@ CREATE TABLE IF NOT EXISTS `twitter_account` (
   `avatar` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.twitter_account: ~0 rows (approximately)
+--  Data of table smile.twitter_account: ~0 rows (approximately)
 
--- Dumping structure for table sulu.twitter_hashtags
+--  Table smile.twitter_hashtags
 DROP TABLE IF EXISTS `twitter_hashtags`;
 CREATE TABLE IF NOT EXISTS `twitter_hashtags` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1654,9 +1641,9 @@ CREATE TABLE IF NOT EXISTS `twitter_hashtags` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.twitter_hashtags: ~0 rows (approximately)
+--  Data of table smile.twitter_hashtags: ~0 rows (approximately)
 
--- Dumping structure for table sulu.twitter_mentions
+--  Table smile.twitter_mentions
 DROP TABLE IF EXISTS `twitter_mentions`;
 CREATE TABLE IF NOT EXISTS `twitter_mentions` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1667,9 +1654,9 @@ CREATE TABLE IF NOT EXISTS `twitter_mentions` (
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.twitter_mentions: ~0 rows (approximately)
+--  Data of table smile.twitter_mentions: ~0 rows (approximately)
 
--- Dumping structure for table sulu.twitter_tweets
+--  Table smile.twitter_tweets
 DROP TABLE IF EXISTS `twitter_tweets`;
 CREATE TABLE IF NOT EXISTS `twitter_tweets` (
   `id` int(5) NOT NULL AUTO_INCREMENT,
@@ -1683,9 +1670,9 @@ CREATE TABLE IF NOT EXISTS `twitter_tweets` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.twitter_tweets: ~0 rows (approximately)
+--  Data of table smile.twitter_tweets: ~0 rows (approximately)
 
--- Dumping structure for table sulu.users
+--  Table smile.users
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1734,18 +1721,18 @@ CREATE TABLE IF NOT EXISTS `users` (
   `eventpoint` int(11) NOT NULL DEFAULT 0,
   `eventtime` int(50) NOT NULL DEFAULT 0,
   `eventpremium` int(1) NOT NULL DEFAULT 0,
-  `eventdata` longtext DEFAULT '[]',
-  `eventdaily` longtext DEFAULT '[]',
+  `eventdata` longtext,
+  `eventdaily` longtext,
   PRIMARY KEY (`identifier`),
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.users: ~2 rows (approximately)
+--  Data of table smile.users: ~2 rows (approximately)
 REPLACE INTO `users` (`id`, `identifier`, `name`, `accounts`, `group`, `inventory`, `job`, `job_grade`, `job2`, `job2_grade`, `loadout`, `position`, `firstname`, `lastname`, `dateofbirth`, `sex`, `height`, `skin`, `status`, `isDead`, `disabled`, `last_property`, `created_at`, `last_seen`, `phone_number`, `pincode`, `tattoos`, `apps`, `widget`, `bt`, `charinfo`, `metadata`, `cryptocurrency`, `cryptocurrencytransfers`, `truyna`, `saotruyna`, `gift`, `jail`, `camchat`, `phonePos`, `spotify`, `ringtone`, `first_screen_showed`, `eventpoint`, `eventtime`, `eventpremium`, `eventdata`, `eventdaily`) VALUES
 	(2, '1100001147e8c1c', 'Bin', '{"black_money":0,"money":0,"bank":62200}', 'user', '[]', 'ambulance', 4, 'nogang', 0, '[]', '{"x":725.037353515625,"heading":181.41732788085938,"z":11.3853759765625,"y":-2671.503173828125}', NULL, NULL, NULL, NULL, NULL, '{"model":"mp_m_freemode_01","tattoos":[],"props":[{"prop_id":0,"drawable":-1,"texture":-1},{"prop_id":1,"drawable":-1,"texture":-1},{"prop_id":2,"drawable":-1,"texture":-1},{"prop_id":6,"drawable":-1,"texture":-1},{"prop_id":7,"drawable":-1,"texture":-1}],"components":[{"drawable":0,"texture":0,"component_id":0},{"drawable":0,"texture":0,"component_id":1},{"drawable":0,"texture":0,"component_id":2},{"drawable":0,"texture":0,"component_id":3},{"drawable":0,"texture":0,"component_id":4},{"drawable":0,"texture":0,"component_id":5},{"drawable":0,"texture":0,"component_id":6},{"drawable":0,"texture":0,"component_id":7},{"drawable":0,"texture":0,"component_id":8},{"drawable":0,"texture":0,"component_id":9},{"drawable":0,"texture":0,"component_id":10},{"drawable":0,"texture":0,"component_id":11}],"eyeColor":-1,"headBlend":{"thirdMix":0,"skinThird":0,"shapeMix":0,"shapeSecond":0,"shapeThird":0,"skinSecond":0,"shapeFirst":0,"skinFirst":0,"skinMix":0},"faceFeatures":{"nosePeakHigh":0,"nosePeakSize":0,"nosePeakLowering":0,"cheeksWidth":0,"chinHole":0,"lipsThickness":0,"jawBoneWidth":0,"chinBoneSize":0,"eyeBrownHigh":0,"noseWidth":0,"neckThickness":0,"noseBoneHigh":0,"chinBoneLowering":0,"cheeksBoneWidth":0,"cheeksBoneHigh":0,"chinBoneLenght":0,"noseBoneTwist":0,"jawBoneBackSize":0,"eyeBrownForward":0,"eyesOpening":0},"hair":{"texture":0,"style":0,"highlight":0,"color":0},"headOverlays":{"blemishes":{"opacity":0,"style":0,"color":0,"secondColor":0},"beard":{"opacity":0,"style":0,"color":0,"secondColor":0},"lipstick":{"opacity":0,"style":0,"color":0,"secondColor":0},"chestHair":{"opacity":0,"style":0,"color":0,"secondColor":0},"eyebrows":{"opacity":0,"style":0,"color":0,"secondColor":0},"bodyBlemishes":{"opacity":0,"style":0,"color":0,"secondColor":0},"blush":{"opacity":0,"style":0,"color":0,"secondColor":0},"complexion":{"opacity":0,"style":0,"color":0,"secondColor":0},"makeUp":{"opacity":0,"style":0,"color":0,"secondColor":0},"sunDamage":{"opacity":0,"style":0,"color":0,"secondColor":0},"moleAndFreckles":{"opacity":0,"style":0,"color":0,"secondColor":0},"ageing":{"opacity":0,"style":0,"color":0,"secondColor":0}}}', '[{"percent":12.2235,"val":122235,"name":"hunger"},{"percent":12.2235,"val":122235,"name":"thirst"}]', 0, 0, NULL, '2024-01-28 14:42:40', '2024-01-28 15:15:26', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, '{"itemrewarded":[],"missionrewarded":[],"items":{"trash":0,"pizza":0,"heroin":0,"clothe":0,"copper":0,"xang":0,"fish":0,"cutted_wood":0,"coca":0,"cannabis":0,"diamond":0,"slaughtered_chicken":0}}', '{"items":{"trash":0,"pizza":0,"heroin":0,"clothe":0,"copper":0,"xang":0,"fish":0,"cutted_wood":0,"coca":0,"cannabis":0,"diamond":0,"slaughtered_chicken":0},"missionrewarded":[],"missiondata":[{"rank":1,"mission":5},{"rank":2,"mission":1},{"rank":3,"mission":3}],"missiondate":28}'),
 	(1, '11000013e621c8b', 'Bun', '{"black_money":0,"bank":53900,"money":0}', 'user', '[{"count":1,"metadata":{"resource":"từ admin","serial":"212500QMX723254","components":[],"registered":"steam:11000013e621c8b","time":"21:34:20 - 01/28/24","durability":100,"ammo":0},"name":"WEAPON_ASSAULTRIFLE","slot":1},{"count":1,"name":"balo","slot":2},{"count":1,"name":"hifi","slot":3}]', 'unemployed', 0, 'police', 3, '[]', '{"y":-351.73187255859377,"z":46.8037109375,"heading":294.80316162109377,"x":403.015380859375}', NULL, NULL, NULL, NULL, NULL, '{"components":[{"texture":0,"drawable":0,"component_id":0},{"texture":0,"drawable":0,"component_id":1},{"texture":0,"drawable":0,"component_id":2},{"texture":0,"drawable":0,"component_id":3},{"texture":0,"drawable":0,"component_id":4},{"texture":0,"drawable":0,"component_id":5},{"texture":0,"drawable":0,"component_id":6},{"texture":0,"drawable":0,"component_id":7},{"texture":0,"drawable":0,"component_id":8},{"texture":0,"drawable":0,"component_id":9},{"texture":0,"drawable":0,"component_id":10},{"texture":0,"drawable":0,"component_id":11}],"headOverlays":{"chestHair":{"secondColor":0,"opacity":0,"style":0,"color":0},"makeUp":{"secondColor":0,"opacity":0,"style":0,"color":0},"moleAndFreckles":{"secondColor":0,"opacity":0,"style":0,"color":0},"sunDamage":{"secondColor":0,"opacity":0,"style":0,"color":0},"bodyBlemishes":{"secondColor":0,"opacity":0,"style":0,"color":0},"lipstick":{"secondColor":0,"opacity":0,"style":0,"color":0},"ageing":{"secondColor":0,"opacity":0,"style":0,"color":0},"complexion":{"secondColor":0,"opacity":0,"style":0,"color":0},"eyebrows":{"secondColor":0,"opacity":0,"style":0,"color":0},"blush":{"secondColor":0,"opacity":0,"style":0,"color":0},"blemishes":{"secondColor":0,"opacity":0,"style":0,"color":0},"beard":{"secondColor":0,"opacity":0,"style":0,"color":0}},"headBlend":{"shapeMix":0,"shapeFirst":0,"shapeSecond":0,"skinFirst":0,"skinThird":0,"shapeThird":0,"skinSecond":0,"skinMix":0,"thirdMix":0},"props":[{"drawable":-1,"texture":-1,"prop_id":0},{"drawable":-1,"texture":-1,"prop_id":1},{"drawable":-1,"texture":-1,"prop_id":2},{"drawable":-1,"texture":-1,"prop_id":6},{"drawable":-1,"texture":-1,"prop_id":7}],"model":"mp_m_freemode_01","faceFeatures":{"eyeBrownForward":0,"eyeBrownHigh":0,"cheeksWidth":0,"chinBoneSize":0,"chinBoneLenght":0,"nosePeakLowering":0,"lipsThickness":0,"eyesOpening":0,"noseWidth":0,"noseBoneTwist":0,"nosePeakHigh":0,"cheeksBoneHigh":0,"cheeksBoneWidth":0,"chinBoneLowering":0,"jawBoneWidth":0,"noseBoneHigh":0,"jawBoneBackSize":0,"nosePeakSize":0,"chinHole":0,"neckThickness":0},"hair":{"highlight":0,"texture":0,"color":0,"style":0},"eyeColor":-1,"tattoos":[]}', '[{"val":988890,"name":"hunger","percent":98.88900000000001},{"val":988890,"name":"thirst","percent":98.88900000000001}]', 0, 0, NULL, '2024-01-28 14:30:16', '2024-01-29 08:44:34', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, NULL, NULL, NULL, NULL, NULL, 0, 0, 0, '{"missionrewarded":[],"items":{"cannabis":0,"cutted_wood":0,"diamond":0,"heroin":0,"xang":0,"trash":0,"fish":0,"copper":0,"clothe":0,"coca":0,"slaughtered_chicken":0,"pizza":0},"itemrewarded":[]}', '{"missionrewarded":[],"missiondata":[{"rank":1,"mission":8},{"rank":2,"mission":7},{"rank":3,"mission":1}],"missiondate":29,"items":{"cannabis":0,"cutted_wood":0,"diamond":0,"heroin":0,"xang":0,"trash":0,"fish":0,"copper":0,"clothe":0,"coca":0,"pizza":0,"slaughtered_chicken":0}}');
 
--- Dumping structure for table sulu.user_licenses
+--  Table smile.user_licenses
 DROP TABLE IF EXISTS `user_licenses`;
 CREATE TABLE IF NOT EXISTS `user_licenses` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1754,9 +1741,9 @@ CREATE TABLE IF NOT EXISTS `user_licenses` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.user_licenses: ~0 rows (approximately)
+--  Data of table smile.user_licenses: ~0 rows (approximately)
 
--- Dumping structure for table sulu.vehicles
+--  Table smile.vehicles
 DROP TABLE IF EXISTS `vehicles`;
 CREATE TABLE IF NOT EXISTS `vehicles` (
   `name` varchar(60) NOT NULL,
@@ -1766,7 +1753,7 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
   `imglink` longtext DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.vehicles: ~93 rows (approximately)
+--  Data of table smile.vehicles: ~93 rows (approximately)
 REPLACE INTO `vehicles` (`name`, `model`, `price`, `category`, `imglink`) VALUES
 	('Adder', 'adder', 900000, 'super', 'https://i.imgur.com/7z3EWHn.jpg'),
 	('Akuma', 'AKUMA', 7500, 'motorcycles', 'https://i.imgur.com/7N4bxxm.jpg'),
@@ -1862,7 +1849,7 @@ REPLACE INTO `vehicles` (`name`, `model`, `price`, `category`, `imglink`) VALUES
 	('BMW S1000RR', 's1000rr', 15999999, 'abc', 'https://i.imgur.com/yU1qp7h.png'),
 	('BMW M3 Hycade', 'm3ig', 7999999, 'abc', 'https://i.imgur.com/w1nIsgt.png');
 
--- Dumping structure for table sulu.vehicle_categories
+--  Table smile.vehicle_categories
 DROP TABLE IF EXISTS `vehicle_categories`;
 CREATE TABLE IF NOT EXISTS `vehicle_categories` (
   `name` varchar(60) NOT NULL,
@@ -1870,7 +1857,7 @@ CREATE TABLE IF NOT EXISTS `vehicle_categories` (
   PRIMARY KEY (`name`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.vehicle_categories: ~12 rows (approximately)
+--  Data of table smile.vehicle_categories: ~12 rows (approximately)
 REPLACE INTO `vehicle_categories` (`name`, `label`) VALUES
 	('abc', 'Xe Custom'),
 	('compacts', 'Compacts'),
@@ -1885,7 +1872,7 @@ REPLACE INTO `vehicle_categories` (`name`, `label`) VALUES
 	('suvs', 'SUVs'),
 	('vans', 'Vans');
 
--- Dumping structure for table sulu.vehicle_sold
+--  Table smile.vehicle_sold
 DROP TABLE IF EXISTS `vehicle_sold`;
 CREATE TABLE IF NOT EXISTS `vehicle_sold` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1897,9 +1884,9 @@ CREATE TABLE IF NOT EXISTS `vehicle_sold` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.vehicle_sold: ~0 rows (approximately)
+--  Data of table smile.vehicle_sold: ~0 rows (approximately)
 
--- Dumping structure for table sulu.whatsapp_accounts
+--  Table smile.whatsapp_accounts
 DROP TABLE IF EXISTS `whatsapp_accounts`;
 CREATE TABLE IF NOT EXISTS `whatsapp_accounts` (
   `id` varchar(100) NOT NULL,
@@ -1909,9 +1896,9 @@ CREATE TABLE IF NOT EXISTS `whatsapp_accounts` (
   `avatar` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.whatsapp_accounts: ~0 rows (approximately)
+--  Data of table smile.whatsapp_accounts: ~0 rows (approximately)
 
--- Dumping structure for table sulu.whatsapp_chats
+--  Table smile.whatsapp_chats
 DROP TABLE IF EXISTS `whatsapp_chats`;
 CREATE TABLE IF NOT EXISTS `whatsapp_chats` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1922,9 +1909,9 @@ CREATE TABLE IF NOT EXISTS `whatsapp_chats` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.whatsapp_chats: ~0 rows (approximately)
+--  Data of table smile.whatsapp_chats: ~0 rows (approximately)
 
--- Dumping structure for table sulu.whatsapp_chats_messages
+--  Table smile.whatsapp_chats_messages
 DROP TABLE IF EXISTS `whatsapp_chats_messages`;
 CREATE TABLE IF NOT EXISTS `whatsapp_chats_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1937,9 +1924,9 @@ CREATE TABLE IF NOT EXISTS `whatsapp_chats_messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.whatsapp_chats_messages: ~0 rows (approximately)
+--  Data of table smile.whatsapp_chats_messages: ~0 rows (approximately)
 
--- Dumping structure for table sulu.whatsapp_groups
+--  Table smile.whatsapp_groups
 DROP TABLE IF EXISTS `whatsapp_groups`;
 CREATE TABLE IF NOT EXISTS `whatsapp_groups` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1952,9 +1939,9 @@ CREATE TABLE IF NOT EXISTS `whatsapp_groups` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.whatsapp_groups: ~0 rows (approximately)
+--  Data of table smile.whatsapp_groups: ~0 rows (approximately)
 
--- Dumping structure for table sulu.whatsapp_groups_messages
+--  Table smile.whatsapp_groups_messages
 DROP TABLE IF EXISTS `whatsapp_groups_messages`;
 CREATE TABLE IF NOT EXISTS `whatsapp_groups_messages` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -1968,9 +1955,9 @@ CREATE TABLE IF NOT EXISTS `whatsapp_groups_messages` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.whatsapp_groups_messages: ~0 rows (approximately)
+--  Data of table smile.whatsapp_groups_messages: ~0 rows (approximately)
 
--- Dumping structure for table sulu.whatsapp_groups_users
+--  Table smile.whatsapp_groups_users
 DROP TABLE IF EXISTS `whatsapp_groups_users`;
 CREATE TABLE IF NOT EXISTS `whatsapp_groups_users` (
   `number_group` varchar(50) NOT NULL,
@@ -1978,9 +1965,9 @@ CREATE TABLE IF NOT EXISTS `whatsapp_groups_users` (
   `phone` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Dumping data for table sulu.whatsapp_groups_users: ~0 rows (approximately)
+--  Data of table smile.whatsapp_groups_users: ~0 rows (approximately)
 
--- Dumping structure for table sulu.whatsapp_stories
+--  Table smile.whatsapp_stories
 DROP TABLE IF EXISTS `whatsapp_stories`;
 CREATE TABLE IF NOT EXISTS `whatsapp_stories` (
   `phone` varchar(50) NOT NULL,
@@ -1991,18 +1978,18 @@ CREATE TABLE IF NOT EXISTS `whatsapp_stories` (
   `filter` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.whatsapp_stories: ~0 rows (approximately)
+--  Data of table smile.whatsapp_stories: ~0 rows (approximately)
 
--- Dumping structure for table sulu.whitelist
+--  Table smile.whitelist
 DROP TABLE IF EXISTS `whitelist`;
 CREATE TABLE IF NOT EXISTS `whitelist` (
   `identifier` varchar(46) NOT NULL,
   PRIMARY KEY (`identifier`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
--- Dumping data for table sulu.whitelist: ~0 rows (approximately)
+--  Data of table smile.whitelist: ~0 rows (approximately)
 
--- Dumping structure for table sulu.yellowpages_posts
+--  Table smile.yellowpages_posts
 DROP TABLE IF EXISTS `yellowpages_posts`;
 CREATE TABLE IF NOT EXISTS `yellowpages_posts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
@@ -2013,7 +2000,7 @@ CREATE TABLE IF NOT EXISTS `yellowpages_posts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- Dumping data for table sulu.yellowpages_posts: ~0 rows (approximately)
+--  Data of table smile.yellowpages_posts: ~0 rows (approximately)
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
