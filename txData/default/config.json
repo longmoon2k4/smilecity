@@ -1,21 +1,9 @@
 {
-  "global": {
-    "serverName": null,
-    "language": "en"
+  "version": 2,
+  "general": {
+    "serverName": "Smile City"
   },
-  "logger": {},
-  "monitor": {
-    "restarterSchedule": []
-  },
-  "webServer": {},
-  "discordBot": {
-    "enabled": false,
-    "token": null,
-    "announceChannel": null
-  },
-  "fxRunner": {
-    "serverDataPath": null,
-    "cfgPath": null,
-    "autostart": true
+  "server": {
+    "dataPath": "E:/[smilecity]/DATA/"
   }
 }

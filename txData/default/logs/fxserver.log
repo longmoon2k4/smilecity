@@ -1,0 +1,862 @@
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [5720] FXServer Starting - 6/21/2025, 12:11:37 PM      
+║             TXADMIN║ ================================================================
+║             TXADMIN║ setr "txAdmin-locale" "en"
+║             TXADMIN║ set "txAdmin-serverName" "Smile City"
+║             TXADMIN║ set "txAdmin-checkPlayerJoin" "true"
+║             TXADMIN║ set "txAdmin-menuAlignRight" "false"
+║             TXADMIN║ set "txAdmin-menuPageKey" "Tab"
+║             TXADMIN║ set "txAdmin-playerModePtfx" "true"
+║             TXADMIN║ set "txAdmin-hideAdminInPunishments" "true"
+║             TXADMIN║ set "txAdmin-hideAdminInMessages" "false"
+║             TXADMIN║ set "txAdmin-hideDefaultAnnouncement" "false"
+║             TXADMIN║ set "txAdmin-hideDefaultDirectMessage" "false"
+║             TXADMIN║ set "txAdmin-hideDefaultWarning" "false"
+║             TXADMIN║ set "txAdmin-hideDefaultScheduledRestartWarning" "false"
+║             TXADMIN║ txaEvent "configChanged" "{}"
+[           resources] Scanning resources.
+[ resources:resources] Warning: resources does not have a resource manifest (fxmanifest.lua)
+[           resources] Found 2 resources.
+[           resources] 1 warning was encountered.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[ citizen-server-impl] Couldn't find resource sessionmanager.
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[ citizen-server-impl] Couldn't find resource spawnmanager.
+[ citizen-server-impl] Couldn't find resource hardcap.
+[ citizen-server-impl] Couldn't find resource oxmysql.
+[ citizen-server-impl] Couldn't find resource bob74_ipl.
+[ citizen-server-impl] Couldn't find resource WaveShield.
+[ citizen-server-impl] Couldn't find resource ox_lib.
+[ citizen-server-impl] Couldn't find resource localstorage.
+[ citizen-server-impl] Couldn't find resource category [Base].
+[ citizen-server-impl] Couldn't find resource category [standalone].
+[ citizen-server-impl] Couldn't find resource ox_inventory.
+[ citizen-server-impl] Couldn't find resource category [ESX].
+[                 cmd] No such config file: @ox_inventory/config.cfg
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://ha-vu-long-k18-hl-5x56q6.users.cfx.re/
+[ citizen-server-impl] sync thread hitch warning: timer interval of 105 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 156 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 156 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 155 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 177 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 177 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 111 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 198 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 230 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 356 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 160 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 120 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 165 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 132 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 162 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 125 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 158 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 156 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 199 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 147 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 321 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 324 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 177 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 183 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 329 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 183 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 196 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 225 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 265 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 276 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 316 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 321 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 136 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 172 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 163 milliseconds
+[ citizen-server-impl] sync thread hitch warning: timer interval of 137 milliseconds
+║             TXADMIN║ txaEvent "serverShuttingDown" "{\"delay\":5000,\"author\":\"Ha_Vu_Long_K18_HL\",\"message\":\"Server restarting (admin request).\"}"
+[      script:monitor] [txAdmin] Server shutting down. Kicking all players.
+
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [6768] FXServer Starting - 6/21/2025, 12:24:23 PM      
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[ resources:resources] Warning: resources does not have a resource manifest (fxmanifest.lua)
+[           resources] Found 2 resources.
+[           resources] 1 warning was encountered.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[ citizen-server-impl] Couldn't find resource sessionmanager.
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[ citizen-server-impl] Couldn't find resource spawnmanager.
+[ citizen-server-impl] Couldn't find resource hardcap.
+[ citizen-server-impl] Couldn't find resource oxmysql.
+[ citizen-server-impl] Couldn't find resource bob74_ipl.
+[ citizen-server-impl] Couldn't find resource WaveShield.
+[ citizen-server-impl] Couldn't find resource ox_lib.
+[ citizen-server-impl] Couldn't find resource localstorage.
+[ citizen-server-impl] Couldn't find resource category [Base].
+[ citizen-server-impl] Couldn't find resource category [standalone].
+[ citizen-server-impl] Couldn't find resource ox_inventory.
+[ citizen-server-impl] Couldn't find resource category [ESX].
+[                 cmd] No such config file: @ox_inventory/config.cfg
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://ha-vu-long-k18-hl-5x56q6.users.cfx.re/
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [7552] FXServer Starting - 6/21/2025, 12:25:33 PM      
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[      resources:chat] Warning: chat exists in more than one place (E:\[smilecity]\DATA\resources\[Base]\chat is used, the duplicate is E:\[smilecity]\DATA\resources\[cfx-default]\[gameplay]\chat)
+[resources:sulu_muado] Error: sulu_muado failed to load: Could not parse resource metadata file E:/[smilecity]/DATA/resources//[ESX]/[Jobs]/sulu_muado/fxmanifest.lua: sulu_muado/fxmanifest.lua:1: unexpected symbol near ','
+[resources:esx_thongb] Warning: esx_thongbao has an outdated manifest (__resource.lua instead of fxmanifest.lua)
+[     resources:nonpc] Warning: nonpc has an outdated manifest (__resource.lua instead of fxmanifest.lua)
+[ resources:sulu_skin] Warning: sulu_skin has an outdated manifest (__resource.lua instead of fxmanifest.lua)
+[resources:nnct_skins] Warning: nnct_skinsung has an outdated manifest (__resource.lua instead of fxmanifest.lua)
+[           resources] Found 157 resources.
+[           resources] 5 warnings and 1 error were encountered.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for sessionmanager
+[           resources] Started resource sessionmanager
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[           resources] Started resource spawnmanager
+[    c-scripting-core] Creating script environments for hardcap
+[           resources] Started resource hardcap
+[    c-scripting-core] Creating script environments for oxmysql
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource oxmysql
+[           resources] Started resource bob74_ipl
+[ citizen-server-impl] Couldn't find resource WaveShield.
+[    c-scripting-core] Creating script environments for ox_lib
+[           resources] Started resource ox_lib
+[ citizen-server-impl] Couldn't find resource localstorage.
+[    c-scripting-core] Creating script environments for async
+[           resources] Started resource async
+[    c-scripting-core] Creating script environments for es_extended
+[           resources] Started resource es_extended
+[    c-scripting-core] Creating script environments for chat
+[           resources] Started resource chat
+[    c-scripting-core] Creating script environments for cron
+[           resources] Started resource cron
+[    c-scripting-core] Creating script environments for esx_context
+[           resources] Started resource esx_context
+[    c-scripting-core] Creating script environments for esx_interact-sound
+[           resources] Started resource esx_interact-sound
+[    c-scripting-core] Creating script environments for esx_menu_default
+[           resources] Started resource esx_menu_default
+[           resources] Started resource esx_menu_dialog
+[           resources] Started resource esx_menu_list
+[    c-scripting-core] Creating script environments for esx_notify
+[    c-scripting-core] Failed to load script @ox_inventorymodules/init.lua.
+[           resources] Started resource esx_notify
+[    c-scripting-core] Creating script environments for esx_progressbar
+[           resources] Started resource esx_progressbar
+[    c-scripting-core] Creating script environments for esx_textui
+[           resources] Started resource esx_textui
+[           resources] Started resource fivem-ipl
+[    c-scripting-core] Creating script environments for loading
+[           resources] Started resource loading
+[           resources] Started resource markers
+[    c-scripting-core] Creating script environments for ox_target
+[           resources] Started resource ox_target
+[    c-scripting-core] Creating script environments for sulu_ban
+[           resources] Started resource sulu_ban
+[           resources] Started resource t-notify
+[    c-scripting-core] Creating script environments for vSync
+[           resources] Started resource vSync
+[    c-scripting-core] Creating script environments for pma-voice
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource pma-voice
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[    c-scripting-core] Creating script environments for DiscordBOT
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource DiscordBOT
+[resources:LosSantosC] Asset LosSantosCustoms/ajaxon_burton_lsc.ytd uses 45.0 MiB of physical memory.
+[resources:LosSantosC] Asset LosSantosCustoms/bt1_02_build.ytd uses 25.1 MiB of physical memory.
+[           resources] Started resource LosSantosCustoms (2 warnings)
+[           resources] Started resource NMG
+[           resources] Started resource Phantom
+[    c-scripting-core] Creating script environments for PolyZone
+[           resources] Started resource PolyZone
+[    c-scripting-core] Creating script environments for RealisticVehicleFailure
+[           resources] Started resource RealisticVehicleFailure
+[           resources] Started resource SMG
+[    c-scripting-core] Creating script environments for ac_radio
+[           resources] Started resource ac_radio
+[    c-scripting-core] Creating script environments for ak4y-advancedFishing
+[           resources] Started resource ak4y-advancedFishing
+[           resources] Started resource input
+[           resources] Started resource mythic_interiors
+[    c-scripting-core] Creating script environments for meta_libs
+[           resources] Started resource meta_libs
+[    c-scripting-core] Creating script environments for allhousing
+[           resources] Started resource allhousing
+[           resources] Started resource anti_aim
+[    c-scripting-core] Creating script environments for carcontrol
+[           resources] Started resource carcontrol
+[    c-scripting-core] Creating script environments for core_crafting
+[resources:core_craft] Warning: could not find file `html/water.png` (defined in fxmanifest.lua:12)
+[resources:core_craft] Warning: could not find file `html/img/*.png` (defined in fxmanifest.lua:12)
+[           resources] Started resource core_crafting (2 warnings)
+[    c-scripting-core] Creating script environments for d3x_vehicleshop
+[           resources] Started resource d3x_vehicleshop
+[           resources] Started resource delete_objects
+[    c-scripting-core] Creating script environments for discord-log
+[           resources] Started resource discord-log
+[           resources] Started resource esx_3dtext
+[    c-scripting-core] Creating script environments for esx_aircraftshop
+[           resources] Started resource esx_aircraftshop
+[    c-scripting-core] Creating script environments for esx_ambulancejob
+[           resources] Started resource esx_ambulancejob
+[    c-scripting-core] Creating script environments for esx_banking
+[           resources] Started resource esx_banking
+[    c-scripting-core] Creating script environments for esx_status
+[           resources] Started resource esx_status
+[    c-scripting-core] Creating script environments for esx_basicneeds
+[           resources] Started resource esx_basicneeds
+[    c-scripting-core] Creating script environments for esx_blacklist
+[           resources] Started resource esx_blacklist
+[           resources] Started resource esx_blips
+[    c-scripting-core] Creating script environments for esx_boat
+[           resources] Started resource esx_boat
+[    c-scripting-core] Creating script environments for esx_carlock
+[           resources] Started resource esx_carlock
+[    c-scripting-core] Creating script environments for esx_carthief
+[           resources] Started resource esx_carthief
+[    c-scripting-core] Creating script environments for esx_chatgo
+[           resources] Started resource esx_chatgo
+[    c-scripting-core] Creating script environments for esx_chatme
+[           resources] Started resource esx_chatme
+[    c-scripting-core] Creating script environments for esx_chotroi
+[           resources] Started resource esx_chotroi
+[    c-scripting-core] Creating script environments for esx_cuopbank
+[           resources] Started resource esx_cuopbank
+[    c-scripting-core] Creating script environments for esx_cuoptaphoa
+[           resources] Started resource esx_cuoptaphoa
+[    c-scripting-core] Creating script environments for esx_cuoptiemvang
+[           resources] Started resource esx_cuoptiemvang
+[    c-scripting-core] Creating script environments for esx_daoda
+[           resources] Started resource esx_daoda
+[    c-scripting-core] Creating script environments for esx_daumo
+[           resources] Started resource esx_daumo
+[    c-scripting-core] Creating script environments for esx_detvai
+[           resources] Started resource esx_detvai
+[    c-scripting-core] Creating script environments for esx_dorac
+[           resources] Started resource esx_dorac
+[    c-scripting-core] Creating script environments for esx_drugs
+[           resources] Started resource esx_drugs
+[    c-scripting-core] Creating script environments for esx_emotes
+[   script:esx_emotes] [dp] Sql Keybinding is turned off, if you want to enable /emotebind, import dpkeybinding.sql and set SqlKeybinding = true in config.lua.
+[           resources] Started resource esx_emotes
+[    c-scripting-core] Creating script environments for esx_gang
+[           resources] Started resource esx_gang
+[    c-scripting-core] Creating script environments for esx_giaobanh
+[           resources] Started resource esx_giaobanh
+[    c-scripting-core] Creating script environments for esx_giaoga
+[           resources] Started resource esx_giaoga
+[    c-scripting-core] Creating script environments for esx_giaybanxe
+[           resources] Started resource esx_giaybanxe
+[    c-scripting-core] Creating script environments for esx_giveallplayers
+[           resources] Started resource esx_giveallplayers
+[    c-scripting-core] Creating script environments for esx_giveownedcar
+[           resources] Started resource esx_giveownedcar
+[    c-scripting-core] Creating script environments for esx_gunshops
+[           resources] Started resource esx_gunshops
+[    c-scripting-core] Creating script environments for esx_langbam
+[           resources] Started resource esx_langbam
+[    c-scripting-core] Creating script environments for esx_license
+[           resources] Started resource esx_license
+[    c-scripting-core] Creating script environments for esx_lscustom
+[           resources] Started resource esx_lscustom
+[    c-scripting-core] Creating script environments for esx_mechanicjob
+[           resources] Started resource esx_mechanicjob
+[    c-scripting-core] Creating script environments for esx_menu
+[           resources] Started resource esx_menu
+[    c-scripting-core] Creating script environments for esx_newaccessories
+[           resources] Started resource esx_newaccessories
+[    c-scripting-core] Creating script environments for esx_nhanviec
+[           resources] Started resource esx_nhanviec
+[    c-scripting-core] Creating script environments for esx_nhatu
+[           resources] Started resource esx_nhatu
+[    c-scripting-core] Creating script environments for esx_onlinennhanqua
+[           resources] Started resource esx_onlinennhanqua
+[    c-scripting-core] Creating script environments for esx_ping
+[           resources] Started resource esx_ping
+[    c-scripting-core] Creating script environments for esx_policejob
+[           resources] Started resource esx_policejob
+[    c-scripting-core] Creating script environments for esx_request
+[           resources] Started resource esx_request
+[    c-scripting-core] Creating script environments for esx_roll
+[           resources] Started resource esx_roll
+[    c-scripting-core] Creating script environments for esx_ruatien
+[           resources] Started resource esx_ruatien
+[    c-scripting-core] Creating script environments for esx_scoreboard
+[           resources] Started resource esx_scoreboard
+[    c-scripting-core] Creating script environments for esx_thongbao
+[           resources] Started resource esx_thongbao
+[    c-scripting-core] Creating script environments for furni
+[           resources] Started resource furni
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_AK12+hi.ytd uses 26.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_AK12.ytd uses 26.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_demon+hi.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_demon.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_demon_mag1.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_demon_mag2.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_prime.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_prime_mag1.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_redrage+hi.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_redrage.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_redrage_mag1.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_redrage_mag2.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_sakura.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_sakura_mag1.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_vandal.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_vandal_mag1.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_akcsgo_1+hi.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_akcsgo_1.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_akcsgo_1_mag2.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_assaultshotgun_sutu+hi.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_assaultshotgun_sutu.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_g36c_ps.ytd uses 28.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4+hi.ytd uses 64.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4.ytd uses 64.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_dragon_king+hi.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_dragon_king.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_dragon_king_mag1.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_mag1.ytd uses 64.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_noel2.ydr uses 16.5 MiB of virtual memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_noel2_hi.ydr uses 16.5 MiB of virtual memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_redwhite.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_redwhite_mag1.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_scarh+hi.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_scarh_dragon+hi.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_scarh_halloween+hi.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_scarh_noel+hi.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_me_katana.ytd uses 32.0 MiB of physical memory.
+[           resources] Started resource gk_weaponskin (37 warnings)
+[    c-scripting-core] Creating script environments for illenium-appearance
+[       script:ox_lib] Unable to determine current resource version for 'illenium-appearance' 
+[           resources] Started resource illenium-appearance
+[           resources] Started resource ipls_resource
+[    c-scripting-core] Creating script environments for nnct_skinsung
+[           resources] Started resource nnct_skinsung
+[           resources] Started resource nonpc
+[    c-scripting-core] Creating script environments for nonrp
+[           resources] Started resource nonrp
+[    c-scripting-core] Creating script environments for ntl_baucua
+[           resources] Started resource ntl_baucua
+[    c-scripting-core] Creating script environments for nui_blocker
+[           resources] Started resource nui_blocker
+[    c-scripting-core] Creating script environments for ox_fuel
+[           resources] Started resource ox_fuel
+[    c-scripting-core] Creating script environments for reward_event
+[           resources] Started resource reward_event
+[    c-scripting-core] Creating script environments for sawu_hookers
+[           resources] Started resource sawu_hookers
+[    c-scripting-core] Creating script environments for yarn
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource yarn
+[    c-scripting-core] Creating script environments for webpack
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource webpack
+[ citizen-server-impl] Running build tasks on resource screenshot-basic - it'll restart once completed.
+[      script:webpack] screenshot-basic: started building client.config.js
+[      script:webpack] webpack is busy: we are waiting to compile screenshot-basic (server.config.js)
+[ citizen-server-impl] Couldn't start resource screenshot-basic.
+[           resources] Started resource shellslocked
+[           resources] Started resource shellsv2
+[    c-scripting-core] Creating script environments for sulu_bando
+[           resources] Started resource sulu_bando
+[resources:sulu_benhv] Asset sulu_benhvien/gabz_pillbox_textures_01.ytd uses 23.8 MiB of physical memory.
+[           resources] Started resource sulu_benhvien (1 warning)
+[    c-scripting-core] Creating script environments for sulu_chiemdong
+[           resources] Started resource sulu_chiemdong
+[    c-scripting-core] Creating script environments for sulu_cros
+[           resources] Started resource sulu_cros
+[    c-scripting-core] Creating script environments for sulu_damage
+[           resources] Started resource sulu_damage
+[           resources] Started resource sulu_datawp
+[    c-scripting-core] Creating script environments for sulu_drop
+[           resources] Started resource sulu_drop
+[    c-scripting-core] Creating script environments for sulu_garage
+[           resources] Started resource sulu_garage
+[    c-scripting-core] Creating script environments for sulu_impound
+[           resources] Started resource sulu_impound
+[    c-scripting-core] Creating script environments for sulu_item
+[           resources] Started resource sulu_item
+[    c-scripting-core] Creating script environments for sulu_keycar
+[           resources] Started resource sulu_keycar
+[    c-scripting-core] Creating script environments for sulu_kill
+[           resources] Started resource sulu_kill
+[    c-scripting-core] Creating script environments for sulu_linhtinh
+[           resources] Started resource sulu_linhtinh
+[    c-scripting-core] Creating script environments for sulu_maidam
+[           resources] Started resource sulu_maidam
+[    c-scripting-core] Creating script environments for sulu_member
+[           resources] Started resource sulu_member
+[    c-scripting-core] Creating script environments for sulu_member_job2
+[           resources] Started resource sulu_member_job2
+[    c-scripting-core] Creating script environments for sulu_mohom
+[           resources] Started resource sulu_mohom
+[    c-scripting-core] Creating script environments for sulu_newbie
+[           resources] Started resource sulu_newbie
+[    c-scripting-core] Creating script environments for sulu_pet
+[           resources] Started resource sulu_pet
+[    c-scripting-core] Creating script environments for sulu_script
+[           resources] Started resource sulu_script
+[    c-scripting-core] Creating script environments for sulu_skin
+[resources:sulu_skin:] Asset sulu_skin/HaganeFlower.ydd uses 24.0 MiB of virtual memory.
+[resources:sulu_skin:] Asset sulu_skin/HaganeHaku.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/HaganeLily.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/HaganeMiki.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/HaganeRin.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/KinzokunagaNeru.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/Mecha Ultraman_NC.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/Nezuko_Kamado.ytd uses 48.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/PiccoloTurtle.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/SakeruneMeiko.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/ZatsuneMiku.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/haku2.ytd uses 48.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/honoka_beach.ytd uses 48.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/lunav.ytd uses 40.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/zenitsu.ytd uses 48.0 MiB of physical memory.
+[           resources] Started resource sulu_skin (15 warnings)
+[    c-scripting-core] Creating script environments for sulu_taixiu
+[           resources] Started resource sulu_taixiu
+[    c-scripting-core] Creating script environments for sulu_thoitrang
+[           resources] Started resource sulu_thoitrang
+[    c-scripting-core] Creating script environments for sulu_vacxac
+[           resources] Started resource sulu_vacxac
+[    c-scripting-core] Creating script environments for teamblip
+[           resources] Started resource teamblip
+[    c-scripting-core] Creating script environments for vex_trucker
+[           resources] Started resource vex_trucker
+[    c-scripting-core] Creating script environments for vvoice
+[           resources] Started resource vvoice
+[    c-scripting-core] Creating script environments for wanted
+[           resources] Started resource wanted
+[                 cmd] No such command ["water", 1, 1].
+[                 cmd] No such command ].
+[                 cmd] No such command ["garbage", 1, 3,30].
+[                 cmd] No such command ].
+[   script:DiscordBOT] Listening on 18952
+[      script:oxmysql] Unable to establish a connection to the database (ER_BAD_DB_ERROR)!
+[      script:oxmysql] Error 1049: Unknown database 'sulu'
+[       script:ox_lib] An update is available for ox_target (current version: 1.13.0)
+[       script:ox_lib] https://github.com/overextended/ox_target/releases/tag/v1.17.2
+[      script:webpack] screenshot-basic: built client.config.js
+[       script:ox_lib] An update is available for ox_lib (current version: 3.10.0)
+[       script:ox_lib] https://github.com/overextended/ox_lib/releases/tag/v3.30.6
+[     script:ac_radio] An update is available for ac_radio (current version: 1.0.8)
+[     script:ac_radio] https://github.com/acscripts/ac_radio/releases/tag/v2.0.2
+[       script:ox_lib] An update is available for ox_fuel (current version: 1.2.0)
+[       script:ox_lib] https://github.com/overextended/ox_fuel/releases/tag/v1.5.1
+[       script:ox_lib] An update is available for ox_inventory (current version: 2.34.3)
+[       script:ox_lib] https://github.com/overextended/ox_inventory/releases/tag/v2.44.1
+[      script:webpack] screenshot-basic: started building server.config.js
+[      script:webpack] webpack is busy: we are waiting to compile screenshot-basic (ui.config.js)
+[     script:sulu_ban] BanList loaded successfully.
+[     script:sulu_ban] BanListHistory loaded successfully.
+[ citizen-server-impl] server thread hitch warning: timer interval of 302 milliseconds
+[   script:allhousing] Completed house table check successfully.
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://ha-vu-long-k18-hl-5x56q6.users.cfx.re/
+[      script:webpack] webpack is busy: we are waiting to compile screenshot-basic (ui.config.js)
+[      script:webpack] screenshot-basic: built server.config.js
+[      script:webpack] screenshot-basic: started building ui.config.js
+[      script:webpack] screenshot-basic: built ui.config.js
+[ citizen-server-impl] Build tasks completed - starting resource screenshot-basic.
+[    c-scripting-core] Creating script environments for screenshot-basic
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource screenshot-basic
+║             TXADMIN║ ================================================================
+║             TXADMIN║ ======== [2256] FXServer Starting - 6/21/2025, 12:27:18 PM      
+║             TXADMIN║ ================================================================
+[           resources] Scanning resources.
+[      resources:chat] Warning: chat exists in more than one place (E:\[smilecity]\DATA\resources\[Base]\chat is used, the duplicate is E:\[smilecity]\DATA\resources\[cfx-default]\[gameplay]\chat)
+[resources:sulu_muado] Error: sulu_muado failed to load: Could not parse resource metadata file E:/[smilecity]/DATA/resources//[ESX]/[Jobs]/sulu_muado/fxmanifest.lua: sulu_muado/fxmanifest.lua:1: unexpected symbol near ','
+[resources:esx_thongb] Warning: esx_thongbao has an outdated manifest (__resource.lua instead of fxmanifest.lua)
+[     resources:nonpc] Warning: nonpc has an outdated manifest (__resource.lua instead of fxmanifest.lua)
+[ resources:sulu_skin] Warning: sulu_skin has an outdated manifest (__resource.lua instead of fxmanifest.lua)
+[resources:nnct_skins] Warning: nnct_skinsung has an outdated manifest (__resource.lua instead of fxmanifest.lua)
+[           resources] Found 157 resources.
+[           resources] 5 warnings and 1 error were encountered.
+[          svadhesive] Authenticating server license key...
+[          svadhesive] Server license key authentication succeeded. Welcome!
+[    c-scripting-core] Creating script environments for sessionmanager
+[           resources] Started resource sessionmanager
+[    c-scripting-core] Creating script environments for monitor
+[      script:monitor] [txAdmin] Resource v8.0.1 threads and commands set up. All Ready.
+[           resources] Started resource monitor
+[           resources] Started resource spawnmanager
+[    c-scripting-core] Creating script environments for hardcap
+[           resources] Started resource hardcap
+[    c-scripting-core] Creating script environments for oxmysql
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource oxmysql
+[           resources] Started resource bob74_ipl
+[ citizen-server-impl] Couldn't find resource WaveShield.
+[    c-scripting-core] Creating script environments for ox_lib
+[           resources] Started resource ox_lib
+[ citizen-server-impl] Couldn't find resource localstorage.
+[    c-scripting-core] Creating script environments for async
+[           resources] Started resource async
+[    c-scripting-core] Creating script environments for es_extended
+[           resources] Started resource es_extended
+[    c-scripting-core] Creating script environments for chat
+[           resources] Started resource chat
+[    c-scripting-core] Creating script environments for cron
+[           resources] Started resource cron
+[    c-scripting-core] Creating script environments for esx_context
+[           resources] Started resource esx_context
+[    c-scripting-core] Creating script environments for esx_interact-sound
+[           resources] Started resource esx_interact-sound
+[    c-scripting-core] Creating script environments for esx_menu_default
+[           resources] Started resource esx_menu_default
+[           resources] Started resource esx_menu_dialog
+[           resources] Started resource esx_menu_list
+[    c-scripting-core] Creating script environments for esx_notify
+[    c-scripting-core] Failed to load script @ox_inventorymodules/init.lua.
+[           resources] Started resource esx_notify
+[    c-scripting-core] Creating script environments for esx_progressbar
+[           resources] Started resource esx_progressbar
+[    c-scripting-core] Creating script environments for esx_textui
+[           resources] Started resource esx_textui
+[           resources] Started resource fivem-ipl
+[    c-scripting-core] Creating script environments for loading
+[           resources] Started resource loading
+[           resources] Started resource markers
+[    c-scripting-core] Creating script environments for ox_target
+[           resources] Started resource ox_target
+[    c-scripting-core] Creating script environments for sulu_ban
+[           resources] Started resource sulu_ban
+[           resources] Started resource t-notify
+[    c-scripting-core] Creating script environments for vSync
+[           resources] Started resource vSync
+[    c-scripting-core] Creating script environments for pma-voice
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource pma-voice
+[    c-scripting-core] Creating script environments for ox_inventory
+[           resources] Started resource ox_inventory
+[    c-scripting-core] Creating script environments for DiscordBOT
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource DiscordBOT
+[resources:LosSantosC] Asset LosSantosCustoms/ajaxon_burton_lsc.ytd uses 45.0 MiB of physical memory.
+[resources:LosSantosC] Asset LosSantosCustoms/bt1_02_build.ytd uses 25.1 MiB of physical memory.
+[           resources] Started resource LosSantosCustoms (2 warnings)
+[           resources] Started resource NMG
+[           resources] Started resource Phantom
+[    c-scripting-core] Creating script environments for PolyZone
+[           resources] Started resource PolyZone
+[    c-scripting-core] Creating script environments for RealisticVehicleFailure
+[           resources] Started resource RealisticVehicleFailure
+[           resources] Started resource SMG
+[    c-scripting-core] Creating script environments for ac_radio
+[           resources] Started resource ac_radio
+[    c-scripting-core] Creating script environments for ak4y-advancedFishing
+[           resources] Started resource ak4y-advancedFishing
+[           resources] Started resource input
+[           resources] Started resource mythic_interiors
+[    c-scripting-core] Creating script environments for meta_libs
+[           resources] Started resource meta_libs
+[    c-scripting-core] Creating script environments for allhousing
+[           resources] Started resource allhousing
+[           resources] Started resource anti_aim
+[    c-scripting-core] Creating script environments for carcontrol
+[           resources] Started resource carcontrol
+[    c-scripting-core] Creating script environments for core_crafting
+[resources:core_craft] Warning: could not find file `html/water.png` (defined in fxmanifest.lua:12)
+[resources:core_craft] Warning: could not find file `html/img/*.png` (defined in fxmanifest.lua:12)
+[           resources] Started resource core_crafting (2 warnings)
+[    c-scripting-core] Creating script environments for d3x_vehicleshop
+[           resources] Started resource d3x_vehicleshop
+[           resources] Started resource delete_objects
+[    c-scripting-core] Creating script environments for discord-log
+[           resources] Started resource discord-log
+[           resources] Started resource esx_3dtext
+[    c-scripting-core] Creating script environments for esx_aircraftshop
+[           resources] Started resource esx_aircraftshop
+[    c-scripting-core] Creating script environments for esx_ambulancejob
+[           resources] Started resource esx_ambulancejob
+[    c-scripting-core] Creating script environments for esx_banking
+[           resources] Started resource esx_banking
+[    c-scripting-core] Creating script environments for esx_status
+[           resources] Started resource esx_status
+[    c-scripting-core] Creating script environments for esx_basicneeds
+[           resources] Started resource esx_basicneeds
+[    c-scripting-core] Creating script environments for esx_blacklist
+[           resources] Started resource esx_blacklist
+[           resources] Started resource esx_blips
+[    c-scripting-core] Creating script environments for esx_boat
+[           resources] Started resource esx_boat
+[    c-scripting-core] Creating script environments for esx_carlock
+[           resources] Started resource esx_carlock
+[    c-scripting-core] Creating script environments for esx_carthief
+[           resources] Started resource esx_carthief
+[    c-scripting-core] Creating script environments for esx_chatgo
+[           resources] Started resource esx_chatgo
+[    c-scripting-core] Creating script environments for esx_chatme
+[           resources] Started resource esx_chatme
+[    c-scripting-core] Creating script environments for esx_chotroi
+[           resources] Started resource esx_chotroi
+[    c-scripting-core] Creating script environments for esx_cuopbank
+[           resources] Started resource esx_cuopbank
+[    c-scripting-core] Creating script environments for esx_cuoptaphoa
+[           resources] Started resource esx_cuoptaphoa
+[    c-scripting-core] Creating script environments for esx_cuoptiemvang
+[           resources] Started resource esx_cuoptiemvang
+[    c-scripting-core] Creating script environments for esx_daoda
+[           resources] Started resource esx_daoda
+[    c-scripting-core] Creating script environments for esx_daumo
+[           resources] Started resource esx_daumo
+[    c-scripting-core] Creating script environments for esx_detvai
+[           resources] Started resource esx_detvai
+[    c-scripting-core] Creating script environments for esx_dorac
+[           resources] Started resource esx_dorac
+[    c-scripting-core] Creating script environments for esx_drugs
+[           resources] Started resource esx_drugs
+[    c-scripting-core] Creating script environments for esx_emotes
+[   script:esx_emotes] [dp] Sql Keybinding is turned off, if you want to enable /emotebind, import dpkeybinding.sql and set SqlKeybinding = true in config.lua.
+[           resources] Started resource esx_emotes
+[    c-scripting-core] Creating script environments for esx_gang
+[           resources] Started resource esx_gang
+[    c-scripting-core] Creating script environments for esx_giaobanh
+[           resources] Started resource esx_giaobanh
+[    c-scripting-core] Creating script environments for esx_giaoga
+[           resources] Started resource esx_giaoga
+[    c-scripting-core] Creating script environments for esx_giaybanxe
+[           resources] Started resource esx_giaybanxe
+[    c-scripting-core] Creating script environments for esx_giveallplayers
+[           resources] Started resource esx_giveallplayers
+[    c-scripting-core] Creating script environments for esx_giveownedcar
+[           resources] Started resource esx_giveownedcar
+[    c-scripting-core] Creating script environments for esx_gunshops
+[           resources] Started resource esx_gunshops
+[    c-scripting-core] Creating script environments for esx_langbam
+[           resources] Started resource esx_langbam
+[    c-scripting-core] Creating script environments for esx_license
+[           resources] Started resource esx_license
+[    c-scripting-core] Creating script environments for esx_lscustom
+[           resources] Started resource esx_lscustom
+[    c-scripting-core] Creating script environments for esx_mechanicjob
+[           resources] Started resource esx_mechanicjob
+[    c-scripting-core] Creating script environments for esx_menu
+[           resources] Started resource esx_menu
+[    c-scripting-core] Creating script environments for esx_newaccessories
+[           resources] Started resource esx_newaccessories
+[    c-scripting-core] Creating script environments for esx_nhanviec
+[           resources] Started resource esx_nhanviec
+[    c-scripting-core] Creating script environments for esx_nhatu
+[           resources] Started resource esx_nhatu
+[    c-scripting-core] Creating script environments for esx_onlinennhanqua
+[           resources] Started resource esx_onlinennhanqua
+[    c-scripting-core] Creating script environments for esx_ping
+[           resources] Started resource esx_ping
+[    c-scripting-core] Creating script environments for esx_policejob
+[           resources] Started resource esx_policejob
+[    c-scripting-core] Creating script environments for esx_request
+[           resources] Started resource esx_request
+[    c-scripting-core] Creating script environments for esx_roll
+[           resources] Started resource esx_roll
+[    c-scripting-core] Creating script environments for esx_ruatien
+[           resources] Started resource esx_ruatien
+[    c-scripting-core] Creating script environments for esx_scoreboard
+[           resources] Started resource esx_scoreboard
+[    c-scripting-core] Creating script environments for esx_thongbao
+[           resources] Started resource esx_thongbao
+[    c-scripting-core] Creating script environments for furni
+[           resources] Started resource furni
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_AK12+hi.ytd uses 26.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_AK12.ytd uses 26.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_demon+hi.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_demon.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_demon_mag1.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_demon_mag2.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_prime.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_prime_mag1.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_redrage+hi.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_redrage.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_redrage_mag1.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_redrage_mag2.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_sakura.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_sakura_mag1.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_vandal.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_ak12_vandal_mag1.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_akcsgo_1+hi.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_akcsgo_1.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_akcsgo_1_mag2.ytd uses 24.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_assaultshotgun_sutu+hi.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_assaultshotgun_sutu.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_g36c_ps.ytd uses 28.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4+hi.ytd uses 64.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4.ytd uses 64.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_dragon_king+hi.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_dragon_king.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_dragon_king_mag1.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_mag1.ytd uses 64.0 MiB of physical memory. Oversized assets can and WILL lead to streaming issues (such as models not loading/rendering).
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_noel2.ydr uses 16.5 MiB of virtual memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_noel2_hi.ydr uses 16.5 MiB of virtual memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_redwhite.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_m4a4_redwhite_mag1.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_scarh+hi.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_scarh_dragon+hi.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_scarh_halloween+hi.ytd uses 40.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_ar_scarh_noel+hi.ytd uses 32.0 MiB of physical memory.
+[resources:gk_weapons] Asset gk_weaponskin/w_me_katana.ytd uses 32.0 MiB of physical memory.
+[           resources] Started resource gk_weaponskin (37 warnings)
+[    c-scripting-core] Creating script environments for illenium-appearance
+[       script:ox_lib] Unable to determine current resource version for 'illenium-appearance' 
+[           resources] Started resource illenium-appearance
+[           resources] Started resource ipls_resource
+[    c-scripting-core] Creating script environments for nnct_skinsung
+[           resources] Started resource nnct_skinsung
+[           resources] Started resource nonpc
+[    c-scripting-core] Creating script environments for nonrp
+[           resources] Started resource nonrp
+[    c-scripting-core] Creating script environments for ntl_baucua
+[           resources] Started resource ntl_baucua
+[    c-scripting-core] Creating script environments for nui_blocker
+[           resources] Started resource nui_blocker
+[    c-scripting-core] Creating script environments for ox_fuel
+[           resources] Started resource ox_fuel
+[    c-scripting-core] Creating script environments for reward_event
+[           resources] Started resource reward_event
+[    c-scripting-core] Creating script environments for sawu_hookers
+[           resources] Started resource sawu_hookers
+[    c-scripting-core] Creating script environments for yarn
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource yarn
+[    c-scripting-core] Creating script environments for webpack
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource webpack
+[    c-scripting-core] Creating script environments for screenshot-basic
+[    c-scripting-core] Failed to load script @WaveShield/resource/waveshield.js.
+[           resources] Started resource screenshot-basic
+[           resources] Started resource shellslocked
+[           resources] Started resource shellsv2
+[    c-scripting-core] Creating script environments for sulu_bando
+[           resources] Started resource sulu_bando
+[resources:sulu_benhv] Asset sulu_benhvien/gabz_pillbox_textures_01.ytd uses 23.8 MiB of physical memory.
+[           resources] Started resource sulu_benhvien (1 warning)
+[    c-scripting-core] Creating script environments for sulu_chiemdong
+[           resources] Started resource sulu_chiemdong
+[    c-scripting-core] Creating script environments for sulu_cros
+[           resources] Started resource sulu_cros
+[    c-scripting-core] Creating script environments for sulu_damage
+[           resources] Started resource sulu_damage
+[           resources] Started resource sulu_datawp
+[    c-scripting-core] Creating script environments for sulu_drop
+[           resources] Started resource sulu_drop
+[    c-scripting-core] Creating script environments for sulu_garage
+[           resources] Started resource sulu_garage
+[    c-scripting-core] Creating script environments for sulu_impound
+[           resources] Started resource sulu_impound
+[    c-scripting-core] Creating script environments for sulu_item
+[           resources] Started resource sulu_item
+[    c-scripting-core] Creating script environments for sulu_keycar
+[           resources] Started resource sulu_keycar
+[    c-scripting-core] Creating script environments for sulu_kill
+[           resources] Started resource sulu_kill
+[    c-scripting-core] Creating script environments for sulu_linhtinh
+[           resources] Started resource sulu_linhtinh
+[    c-scripting-core] Creating script environments for sulu_maidam
+[           resources] Started resource sulu_maidam
+[    c-scripting-core] Creating script environments for sulu_member
+[           resources] Started resource sulu_member
+[    c-scripting-core] Creating script environments for sulu_member_job2
+[           resources] Started resource sulu_member_job2
+[    c-scripting-core] Creating script environments for sulu_mohom
+[           resources] Started resource sulu_mohom
+[    c-scripting-core] Creating script environments for sulu_newbie
+[           resources] Started resource sulu_newbie
+[    c-scripting-core] Creating script environments for sulu_pet
+[           resources] Started resource sulu_pet
+[    c-scripting-core] Creating script environments for sulu_script
+[           resources] Started resource sulu_script
+[    c-scripting-core] Creating script environments for sulu_skin
+[resources:sulu_skin:] Asset sulu_skin/HaganeFlower.ydd uses 24.0 MiB of virtual memory.
+[resources:sulu_skin:] Asset sulu_skin/HaganeHaku.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/HaganeLily.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/HaganeMiki.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/HaganeRin.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/KinzokunagaNeru.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/Mecha Ultraman_NC.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/Nezuko_Kamado.ytd uses 48.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/PiccoloTurtle.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/SakeruneMeiko.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/ZatsuneMiku.ytd uses 32.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/haku2.ytd uses 48.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/honoka_beach.ytd uses 48.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/lunav.ytd uses 40.0 MiB of physical memory.
+[resources:sulu_skin:] Asset sulu_skin/zenitsu.ytd uses 48.0 MiB of physical memory.
+[           resources] Started resource sulu_skin (15 warnings)
+[    c-scripting-core] Creating script environments for sulu_taixiu
+[           resources] Started resource sulu_taixiu
+[    c-scripting-core] Creating script environments for sulu_thoitrang
+[           resources] Started resource sulu_thoitrang
+[    c-scripting-core] Creating script environments for sulu_vacxac
+[           resources] Started resource sulu_vacxac
+[    c-scripting-core] Creating script environments for teamblip
+[           resources] Started resource teamblip
+[    c-scripting-core] Creating script environments for vex_trucker
+[           resources] Started resource vex_trucker
+[    c-scripting-core] Creating script environments for vvoice
+[           resources] Started resource vvoice
+[    c-scripting-core] Creating script environments for wanted
+[           resources] Started resource wanted
+[                 cmd] No such command ["water", 1, 1].
+[                 cmd] No such command ].
+[                 cmd] No such command ["garbage", 1, 3,30].
+[                 cmd] No such command ].
+[   script:DiscordBOT] Listening on 18952
+[      script:oxmysql] [9.3.0] Database server connection established!
+[  script:es_extended] [WARNING] Ignoring job "prisoner" due to no job grades found
+[  script:es_extended] [INFO] ESX Legacy 1.9.3 initialized!
+[     script:ac_radio] An update is available for ac_radio (current version: 1.0.8)
+[     script:ac_radio] https://github.com/acscripts/ac_radio/releases/tag/v2.0.2
+[       script:ox_lib] An update is available for ox_inventory (current version: 2.34.3)
+[       script:ox_lib] https://github.com/overextended/ox_inventory/releases/tag/v2.44.1
+[       script:ox_lib] An update is available for ox_lib (current version: 3.10.0)
+[       script:ox_lib] https://github.com/overextended/ox_lib/releases/tag/v3.30.6
+[       script:ox_lib] An update is available for ox_fuel (current version: 1.2.0)
+[       script:ox_lib] https://github.com/overextended/ox_fuel/releases/tag/v1.5.1
+[       script:ox_lib] An update is available for ox_target (current version: 1.13.0)
+[       script:ox_lib] https://github.com/overextended/ox_target/releases/tag/v1.17.2
+[     script:sulu_ban] BanList loaded successfully.
+[     script:sulu_ban] BanListHistory loaded successfully.
+[ citizen-server-impl]         fff                          
+[ citizen-server-impl]   cccc ff   xx  xx     rr rr    eee  
+[ citizen-server-impl] cc     ffff   xx       rrr  r ee   e 
+[ citizen-server-impl] cc     ff     xx   ... rr     eeeee  
+[ citizen-server-impl]  ccccc ff   xx  xx ... rr      eeeee 
+[ citizen-server-impl]                                      
+[ citizen-server-impl] Authenticated with cfx.re Nucleus: https://ha-vu-long-k18-hl-5x56q6.users.cfx.re/
+[   script:allhousing] Completed house table check successfully.
+[ script:ox_inventory] [info] Inventory has loaded 458 items
+[ citizen-server-impl] sync thread hitch warning: timer interval of 106 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 151 milliseconds
+║             TXADMIN║ txaReportResources 
+[      script:monitor] [txAdmin] Sending resources list to txAdmin.
+[ citizen-server-impl] sync thread hitch warning: timer interval of 262 milliseconds
+[ citizen-server-impl] network thread hitch warning: timer interval of 262 milliseconds
+[ citizen-server-impl] server thread hitch warning: timer interval of 262 milliseconds
