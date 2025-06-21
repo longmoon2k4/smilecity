@@ -1,0 +1,12 @@
+lang = {}
+lang.HelpNotification = "Nhấn ~g~[E]~s~ để bắt đầu chiếm đóng"
+lang.HelpNotificationBoom = "Nhấn ~g~[E]~s~ để bắt đầu đặt boom"
+lang.occupated = "Khu vực này đã thuộc về gang của bạn."
+lang.CaptureLabel = "Đang chiếm"
+lang.CaptureNotify = "Có người đang chiếm khu vực của bạn"
+lang.Busy = "Đang có người chiếm khu này, bạn không thể chiếm"
+lang.Captured = "Khu vực của bạn đã bị chiếm"
+lang.BlipDefaultText = "~r~Khu Vực Chiếm Đóng"
+lang.InvalidJob = "Băng đảng của bạn không được cấp phép chiếm đóng."
+lang.SafeTime = "Khu vực này vừa bị chiếm, hãy quay lại trong "
+lang.ChartsTitle = "~o~BẢNG XẾP HẠNG CHIẾM ĐÓNG"

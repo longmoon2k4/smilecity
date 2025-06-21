@@ -1,0 +1,302 @@
+<html>
+	<head>
+		<title>SAWU_Hookers</title>
+		<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons'>
+		<link rel="stylesheet" href="libraries/vuetify.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<v-app id="SAWU_Hookers">
+			<v-content>
+				<div id="SAWU_SelectHookers" v-show="showPimpSelector">
+					<div id="SAWU_Hookers_Base">
+						<div id="SAWU_Hookers_Header">
+							Dịch vụ gái gọi START FIVE
+							<v-btn color="red" absolute right top small fab dark @click="CloseHookersMenu()">
+								<v-icon>close</v-icon>
+							</v-btn>
+						</div>
+						<div id="SAWU_Hookers_Body">
+							<v-container fluid grid-list-xs>
+								<v-layout pa-1 row wrap>
+
+									<v-flex xs3>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Eimi Fukada </h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/1.png">
+													</tr>
+													<tr>
+														<td>Tuổi:</td>
+														<td>24</td>
+													</tr>
+													<tr>
+														<td>Chiều cao(cm):</td>
+														<td>169</td>
+													</tr>
+													<tr>
+														<td>Cân nặng(kg):</td>
+														<td>58</td>
+													</tr>
+													<tr>
+														<td>Vòng ba:</td>
+														<td>91</td>
+													</tr>
+													<tr>
+														<td>Khuyên tai:</td>
+														<td>Có</td>
+													</tr>
+													<tr>
+														<td>Xăm hình:</td>
+														<td>không</td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Dịch vụ:</b> Thổi kèn, quét lỗ dậu..</i></small></td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>kỹ năng:</b> <b style="color: green;">Chuyên nghiệp, thoải mái</b></i></small></td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseCathrine()">
+													Trả tiền + niềm vui
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+
+									<v-flex xs3>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Erika Momotani </h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/2.png">
+													</tr>
+													<tr>
+														<td>Tuổi:</td>
+														<td>27</td>
+													</tr>
+													<tr>
+														<td>Chiều cao(cm):</td>
+														<td>170</td>
+													</tr>
+													<tr>
+														<td>Cân nặng(kg):</td>
+														<td>60</td>
+													</tr>
+													<tr>
+														<td>Vòng ba:</td>
+														<td>90</td>
+													</tr>
+													<tr>
+														<td>Khuyên tai:</td>
+														<td>không</td>
+													</tr>
+													<tr>
+														<td>Xăm hình:</td>
+														<td>Không</td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Dịch vụ:</b> Lau cột đèn, đá trứng cút..</i></small></td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>kỹ năng:</b> <b style="color: green;">Điêu luyện, tận tâm..</b></i></small></td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseTatiana()">
+													Trả tiền + niềm vui
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+
+									<v-flex xs3>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Skylarvox </h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/3.png">
+													</tr>
+													<tr>
+														<td>Tuổi:</td>
+														<td>25</td>
+													</tr>
+													<tr>
+														<td>Chiều cao(cm):</td>
+														<td>178</td>
+													</tr>
+													<tr>
+														<td>Weight (kg):</td>
+														<td>62</td>
+													</tr>
+													<tr>
+														<td>Vòng ba:</td>
+														<td>93</td>
+													</tr>
+													<tr>
+														<td>Khuyên tai:</td>
+														<td>Có</td>
+													</tr>
+													<tr>
+														<td>Xăm hình:</td>
+														<td>Không</td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Dịch vụ:</b> Thổi gió, đi dạo..</i></small></td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>kỹ năng:</b> <b style="color: green;">Xinh đẹp, vú bự...</b></i></small></td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseBootylicious()">
+													Trả tiền + niềm vui
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+
+									<v-flex xs3>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Yui Hatano </h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/4.png">
+													</tr>
+													<tr>
+														<td>Tuổi:</td>
+														<td>31</td>
+													</tr>
+													<tr>
+														<td>Chiều cao(cm):</td>
+														<td>161</td>
+													</tr>
+													<tr>
+														<td>Cân nặng(kg):</td>
+														<td>47</td>
+													</tr>
+													<tr>
+														<td>Vòng ba:</td>
+														<td>95</td>
+													</tr>
+													<tr>
+														<td>Khuyên tai:</td>
+														<td>không</td>
+													</tr>
+													<tr>
+														<td>Xăm hình:</td>
+														<td>không</td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>Dịch vụ:</b> Đa dạng</i></small></td>
+													</tr>
+													<tr>
+														<td colspan="2"><small><i><b>kỹ năng:</b> <b style="color: red;">Vô địch</b></i></small></td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseVennesa()">
+													Trả tiền + niềm vui
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+								</v-layout>
+							</v-container>
+						</div>
+					</div>
+				</div>
+				<div id="SAWU_SelectHookers" v-show="showHookersSelector">
+					<div id="SAWU_Hookers_Base">
+						<div id="SAWU_Hookers_Header">
+							Chọn niềm vui của bạn với em yêu..
+							<v-btn color="red" absolute right top small fab dark @click="CloseServiceMenu()">
+								<v-icon>close</v-icon>
+							</v-btn>
+						</div>
+						<div id="SAWU_Hookers_Body">
+							<v-container fluid grid-list-xs>
+								<v-layout pa-1 row wrap>
+									<v-flex xs6>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Pipe</h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/blowjob.png">
+													</tr>
+													<tr>
+														<td>Tiền:</td>
+														<td>{{ blowjob }} $</td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseBlowjob()">
+													Bú cu tới nái!
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+									<v-flex xs6>
+										<v-card style="border: 1px solid rgba(0, 122, 214, 1);">
+											<v-card-title primary-title>
+												<h3> Sex</h3>
+											</v-card-title>
+											<v-card-text>
+												<table>
+													<tr>
+														<img src="img/sex.png">
+													</tr>
+													<tr>
+														<td>Tiền:</td>
+														<td>{{ sex }} $</td>
+													</tr>
+												</table>
+											</v-card-text>
+											<v-card-actions>
+												<v-btn color="green" block dark @click="ChooseSex()">
+													Đụ nhau ư ử!
+												</v-btn>
+											</v-card-actions>
+										</v-card>
+									</v-flex>
+								</v-layout>
+							</v-container>
+						</div>
+					</div>
+				</div>
+				<audio id="blowjob">
+					<source src="img/blowjob.mp3" type="audio/ogg">
+				</audio>
+				<audio id="final">
+					<source src="img/final.mp3" type="audio/ogg">
+				</audio>
+			</v-content>
+		</v-app>
+		<script src="libraries/axios.min.js"></script>
+		<script src="libraries/vue.min.js"></script>
+		<script src="libraries/vuetify.js"></script>
+		<script src="script.js"></script>
+	</body>
+</html>

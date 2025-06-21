@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- Fix By Claude_III -->
+<CWeaponComponentInfoBlob>
+  
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_M4A4_CLIP_01</Name>
+      <Model>w_ar_M4A4_mag1</Model>
+      <LocName>WCT_CLIP1</LocName>
+      <LocDesc>WCD_CLIP1</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="30" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+      <AmmoInfo />
+      <TracerFx />
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+    </Item>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_M4A4_CLIP_02</Name>
+      <Model>w_ar_M4A4_mag1</Model>
+      <LocName>WCT_CLIP1</LocName>
+      <LocDesc>WCD_CLIP1</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="60" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+      <AmmoInfo />
+      <TracerFx />
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_M4A4_VARMOD_MACO</Name>
+      <Model>W_AR_m4a4_maco</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+      <Item>
+        <ComponentName>COMPONENT_M4A4_CLIP_01</ComponentName>
+        <ComponentModel>W_AR_m4a4_maco_mag1</ComponentModel>
+      </Item>
+      <Item>
+        <ComponentName>COMPONENT_M4A4_CLIP_02</ComponentName>
+        <ComponentModel>W_AR_m4a4_maco_mag1</ComponentModel>
+      </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_M4A4_VARMOD_DRAGON_KING</Name>
+      <Model>W_AR_m4a4_dragon_king</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+      <Item>
+        <ComponentName>COMPONENT_M4A4_CLIP_01</ComponentName>
+        <ComponentModel>W_AR_m4a4_dragon_king_mag1</ComponentModel>
+      </Item>
+      </ExtraComponents>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_M4A4_VARMOD_REDWHITE</Name>
+      <Model>W_AR_m4a4_redwhite</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+      <Item>
+        <ComponentName>COMPONENT_M4A4_CLIP_01</ComponentName>
+        <ComponentModel>W_AR_m4a4_redwhite_mag1</ComponentModel>
+      </Item>	  
+      <Item>
+        <ComponentName>COMPONENT_M4A4_CLIP_02</ComponentName>
+        <ComponentModel>W_AR_m4a4_redwhite_mag1</ComponentModel>
+      </Item>
+	  </ExtraComponents>
+    </Item>
+
+     <!-- m4 gaing sinh 1 -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_M4A4_NOEL1</Name>
+      <Model>w_ar_m4a4_noel</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+      <Item>
+        <ComponentName>COMPONENT_M4A4_CLIP_01</ComponentName>
+        <ComponentModel>w_ar_m4a4_mag1_noel</ComponentModel>
+      </Item>
+       <Item>
+		    <ComponentName>COMPONENT_M4A4_CLIP_02</ComponentName>
+		    <ComponentModel>w_ar_m4a4_mag1_noel</ComponentModel>
+		  </Item>
+      </ExtraComponents>
+    </Item>
+    <!-- m4 giang sinh 2 -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_M4A4_NOEL2</Name>
+      <Model>w_ar_m4a4_noel2</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+      <Item>
+        <ComponentName>COMPONENT_M4A4_CLIP_01</ComponentName>
+        <ComponentModel>w_ar_m4a4_mag1_noel2</ComponentModel>
+      </Item>
+      <Item>
+		    <ComponentName>COMPONENT_M4A4_CLIP_02</ComponentName>
+		    <ComponentModel>w_ar_m4a4_mag1_noel2</ComponentModel>
+		  </Item>
+      <Item>
+        <ComponentName>COMPONENT_AT_AR_SUPP</ComponentName>
+        <ComponentModel>w_ar_m4a4_supp_noel2</ComponentModel>
+      </Item>
+      </ExtraComponents>
+    </Item>
+  </Infos>
+  <InfoBlobName>AKP</InfoBlobName>
+</CWeaponComponentInfoBlob>

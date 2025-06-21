@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- Fix By Claude_III -->
+<CWeaponComponentInfoBlob>
+  
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_SCARH_CLIP_01</Name>
+      <Model>w_ar_scarh_mag1</Model>
+      <LocName>WCT_CLIP1</LocName>
+      <LocDesc>WCD_CLIP1</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="30" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+      <AmmoInfo />
+      <TracerFx />
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+    </Item>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_SCARH_CLIP_02</Name>
+      <Model>w_ar_scarh_mag2</Model>
+      <LocName>WCT_CLIP2</LocName>
+      <LocDesc>WCD_CLIP2</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="60" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+      <AmmoInfo />
+      <TracerFx />
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+    </Item>
+    <Item type="CWeaponComponentScopeInfo">
+      <Name>COMPONENT_AT_SCOPE_ACOG</Name>
+      <Model>W_AT_SCOPE_ACOG</Model>
+      <LocName>WCT_SCOPE_MED</LocName>
+      <LocDesc>WCD_SCOPE_MED</LocDesc>
+      <AttachBone>AAPScop</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="5" />
+      <HudRange value="0" />
+      <CameraHash />
+      <RecoilShakeAmplitude value="0.280000" />
+      <ExtraZoomFactorForAccurateMode value="1.200000" />
+      <Reticule value="0" />
+      <ReticuleHash />
+    </Item>
+    <Item type="CWeaponComponentScopeInfo">
+      <Name>COMPONENT_AT_SCOPE_AIMPOINT</Name>
+      <Model>W_AT_SCOPE_AIMPOINT</Model>
+      <LocName>WCT_SCOPE_MED</LocName>
+      <LocDesc>WCD_SCOPE_MED</LocDesc>
+      <AttachBone>AAPScop</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="5" />
+      <HudRange value="0" />
+      <CameraHash />
+      <RecoilShakeAmplitude value="0.280000" />
+      <ExtraZoomFactorForAccurateMode value="1.200000" />
+      <Reticule value="0" />
+      <ReticuleHash />
+      </Item>
+      <Item type="CWeaponComponentScopeInfo">
+      <Name>COMPONENT_AT_SCOPE_EOTECH</Name>
+      <Model>W_AT_SCOPE_EOTECH</Model>
+      <LocName>WCT_SCOPE_MED</LocName>
+      <LocDesc>WCD_SCOPE_MED</LocDesc>
+      <AttachBone>AAPScop</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="5" />
+      <HudRange value="0" />
+      <CameraHash />
+      <RecoilShakeAmplitude value="0.280000" />
+      <ExtraZoomFactorForAccurateMode value="1.200000" />
+      <Reticule value="0" />
+      <ReticuleHash />
+      </Item>
+
+    	<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_SCARH_DRAGON</Name>
+      <Model>w_ar_scarh_dragon</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_SCARH_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_scarh_dragon_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_SCARH_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_scarh_dragon_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+      </Item>
+
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_SCARH_HALLOWEEN</Name>
+      <Model>w_ar_scarh_halloween</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_SCARH_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_scarh_halloween_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_SCARH_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_scarh_halloween_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_SCARH_NOEL</Name>
+      <Model>w_ar_scarh_noel</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_SCARH_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_scarh_noel_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_SCARH_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_scarh_noel_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+  </Infos>
+  <InfoBlobName>SCARH</InfoBlobName>
+</CWeaponComponentInfoBlob>

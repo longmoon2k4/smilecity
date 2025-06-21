@@ -1,0 +1,79 @@
+{
+    "jobs":[
+        {
+            "jobLabel":     "Thợ Mỏ",
+            "jobName":      "miner",
+            "imagepath":    "images/miner_job_w.png",
+            "description":  "Anh thợ mỏ chăm chỉ."
+        },
+        {
+            "jobLabel":     "Đồ Tể",
+            "jobName":      "giaoga",
+            "imagepath":    "images/3056714.png",
+            "description":  "Chúa tể lùa gà."
+        },
+        {
+            "jobLabel":     "Đổ Rác",
+            "jobName":      "garbage",
+            "imagepath":    "images/garbage.png",
+            "description":  "Lao động là vinh quang."
+        },
+   
+        {
+            "jobLabel":     "Thợ Mộc",
+            "jobName":      "lumberjack",
+            "imagepath":    "images/thomoc.png",
+            "description":  "Anh tiều phu may mắn."
+        },
+        {
+            "jobLabel":     "Dầu Mỏ",
+            "jobName":      "daumo",
+            "imagepath":    "images/daumo.png",
+            "description":  "Làm dầu không khó."
+        },
+        {
+            "jobLabel":     "Thợ May",
+            "jobName":      "tailor",
+            "imagepath":    "images/5196005.png",
+            "description":  "Kiếp tằm nhả tơ."
+        },
+        {
+            "jobLabel":     "Ngư dân",
+            "jobName":      "ngudan",
+            "imagepath":    "images/1909982.png",
+            "description":  "Ông(Bà) lão đánh cá và con cá mụp."
+        },
+        {
+            "jobLabel":     "Lang Băm",
+            "jobName":      "langbam",
+            "imagepath":    "images/icons8-doctor-64.png",
+            "description":  "Thầy lang tốt bụng."
+        },
+        {
+            "jobLabel":     "Bán rau",
+            "jobName":      "maidam",
+            "imagepath":    "images/hooker.png",
+            "description":  "Cô bé bán rau nhiệt tình."
+        },
+        {
+            "jobLabel":     "Thất Nghiệp",
+            "jobName":      "unemployed",
+            "imagepath":    "images/thatnghiep.png",
+            "description":  "Ngồi không đếm tiền."
+        }
+    ],
+    "lang": "EN",
+
+    "jobCenter":"Job Center",
+
+    "pedInfo":{
+        "PedCoords": {"x":-266.74, "y":-968.14, "z":30.22},
+        "PedHeading": 209.5,
+        "PedName":"u_m_y_chip"
+    },
+    "pedInfo1":{
+        "PedCoords1": {"x":1705.27, "y": 3780.3, "z":33.76},
+        "PedHeading1": 223.5,
+        "PedName1":"u_m_y_chip"
+    }
+}

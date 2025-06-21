@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<!-- ### DRAGON ### -->
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_DRAGON</modelName>
+			<txdName>w_ar_carbinerifle_dragon</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_DRAGON_MAG1</modelName>
+			<txdName>w_ar_carbinerifle_dragon_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<!-- ### cyper ### -->
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_CYBER</modelName>
+			<txdName>w_ar_carbinerifle_cyber</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_CYBER_MAG1</modelName>
+			<txdName>w_ar_carbinerifle_cyber_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<!-- ### oye ### -->
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_OYE</modelName>
+			<txdName>w_ar_carbinerifle_oye</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_OYE_MAG1</modelName>
+			<txdName>w_ar_carbinerifle_oye_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		
+				<!-- ### daulau ### -->
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_DAULAU</modelName>
+			<txdName>w_ar_carbinerifle_daulau</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_DAULAU_MAG1</modelName>
+			<txdName>w_ar_carbinerifle_daulau_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<!-- ### hypest ### -->
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_HYPEST</modelName>
+			<txdName>w_ar_carbinerifle_hypest</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_HYPEST_MAG1</modelName>
+			<txdName>w_ar_carbinerifle_hypest_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>W_AR_CARBINERIFLE_HYPEST_MAG2</modelName>
+			<txdName>w_ar_carbinerifle_hypest_mag2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<!-- m4a1 nevan -->
+		<Item>
+			<modelName>w_ar_carbinerifle_neva</modelName>
+			<txdName>w_ar_carbinerifle_neva</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_ar_carbinerifle_neva_mag1</modelName>
+			<txdName>w_ar_carbinerifle_neva_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_ar_carbinerifle_neva_mag2</modelName>
+			<txdName>w_ar_carbinerifle_neva_mag2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

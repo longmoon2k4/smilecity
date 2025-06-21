@@ -1,0 +1,41 @@
+var Config = new Object();
+Config.rarity = [
+	{item: "armor", rarity: "white"},
+	{item: "bandage", rarity: "white"},
+	{item: "water", rarity: "white"},
+	{item: "bread", rarity: "white"},
+	{item: "steel", rarity: "white"},
+	{item: "plastic", rarity: "white"},
+	{item: "gold", rarity: "white"},
+	{item: "iron", rarity: "white"},
+	{item: "copper", rarity: "white"},
+	{item: "black_money", rarity: "white"},
+	{item: "cash", rarity: "white"},
+	{item: "badge", rarity: "white"},
+
+
+	{item: "hopkim", rarity: "blue"},
+	{item: "diamond", rarity: "blue"},
+	{item: "medlangbam", rarity: "blue"},
+
+	{item: "skin_bullpup_sakura", rarity: "pink"},
+	{item: "skin_bullpup_zombie", rarity: "pink"},
+	{item: "skin_m4_oye", rarity: "pink"},
+	{item: "skin_bulllpup_bosua", rarity: "pink"},
+	{item: "skin_bulllpup_galaxy1", rarity: "pink"},
+	{item: "skin_m4_cyper", rarity: "pink"},
+	{item: "WEAPON_BAT", rarity: "pink"},
+	{item: "WEAPON_KNIFE", rarity: "pink"},
+	{item: "skin_m4_hepest", rarity: "yellow"},
+	{item: "skin_bulllpup_meiko", rarity: "yellow"},
+	{item: "skin_m4a4_giangsinh1", rarity: "pink"},
+	{item: "skin_m4a4_giangsinh2", rarity: "pink"},
+	{item: "skin_bullpup_giangsinh", rarity: "pink"},
+	{item: "skin_m4_nevan", rarity: "pink"},
+	{item: "badge1", rarity: "pink"},
+
+	{item: "WEAPON_BULLPUPRIFLE", rarity: "yellow"},
+	{item: "WEAPON_ASSAULTSHOTGUN", rarity: "yellow"},
+	{item: "badge2", rarity: "yellow"},
+	// {item: "", rarity: ""},
+];

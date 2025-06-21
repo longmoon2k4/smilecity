@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .bangxephang {
+        /* display: none; */
+        margin-left: 85px;
+        margin-top: 15px;
+        width: 85%;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+      }
+
+      .bangxephang .topchartsbody {
+        width: 100%;
+        position: relative;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-family: "Play", sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+        text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000,
+          1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+
+        padding-right: 100px;
+      }
+
+      .topchartsbody td:nth-child(1) {
+        padding-top: 40px;
+        width: 20%;
+        text-align: center;
+      }
+
+      .topchartsbody td:nth-child(2) {
+        padding-top: 40px;
+        width: 50%;
+        text-align: center;
+      }
+
+      .topchartsbody td:nth-child(3) {
+        padding-top: 40px;
+        text-align: center;
+      }
+
+      .topchartsbody .top1 {
+        font-size: 42px !important;
+        color: #ff4e7a !important;
+      }
+
+      .topchartsbody .top2 {
+        font-size: 36px !important;
+        color: #4eafff !important;
+      }
+
+      .topchartsbody .top3 {
+        font-size: 30px !important;
+        color: #4eff74 !important;
+      }
+
+      .topchartsbody .top1 #stt {
+        height: 150px;
+        background: url("imgs/top1.png") no-repeat;
+        background-size: 75%;
+        background-position: center center;
+      }
+
+      .topchartsbody .top2 #stt {
+        height: 115px;
+        background: url("imgs/top2.png") no-repeat;
+        background-size: 60%;
+        background-position: center center;
+      }
+
+      .topchartsbody .top3 #stt {
+        height: 90px;
+        background: url("imgs/top3.png") no-repeat;
+        background-size: 45%;
+        background-position: center center;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        margin-top: 7%;
+        height: 700px;
+        /* overflow-y: scroll; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="display: none">
+      <div class="bangxephang">
+        <table class="topchartsbody">
+          <thead>
+            <tr class="mainthead">
+              <th>Thứ hạng</th>
+              <th>Gang</th>
+              <th>Số điểm</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="top1">
+              <td id="stt"></td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top2">
+              <td id="stt"></td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top3">
+              <td id="stt"></td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top4">
+              <td id="stt">4</td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top5">
+              <td id="stt">5</td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top6">
+              <td id="stt">6</td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top7">
+              <td id="stt">7</td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top8">
+              <td id="stt">8</td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top9">
+              <td id="stt">9</td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+
+            <tr class="top10">
+              <td id="stt">10</td>
+              <td id="ten"></td>
+              <td id="diem"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        window.addEventListener("keyup", function (event) {
+          if (event.key == "Escape") {
+            $.post("http://sulu_chiemdong/closeNUI", JSON.stringify({}));
+            $(".container").hide();
+          }
+        });
+        window.addEventListener("message", function (e) {
+          var data = e.data.data;
+          $(".container").show();
+          for (let i = 0; i < 10; i++) {
+            $(`.topchartsbody .top${i + 1} #ten`).text(data[i].label || "Chưa Có");
+            $(`.topchartsbody .top${i + 1} #diem`).text(data[i].point || 0);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+Locales['en'] = {
+  ['shop_robbery'] = 'Cướp tiệm vàng',
+  ['press_to_join'] = 'Ấn ~y~[E]~w~ để ~o~tham gia~s~ nhóm cướp ~b~%s~s~',
+  ['press_to_rob'] = 'Ấn ~y~[K]~w~ để ~o~cướp~s~ ~b~%s~s~',
+  ['robbery_timer'] = 'CƯỚP TIỆM VÀNG: ~r~%s~s~ giây còn lại',
+  ['recently_robbed'] = 'Cửa hàng này đã bị cướp. Vui lòng đợi ~y~%s~s~ giây để cướp lại',
+  ['rob_in_prog'] = '~r~%s người đang đạp phá tiệm vàng!',
+  ['started_to_rob'] = 'Một vụ cướp xảy ra trong thành phố !!!',
+  ['alarm_triggered'] = 'Báo động đã được kích hoạt',
+  ['robbery_complete'] = '~r~Bạn đã bình tĩnh trở lại~s~, và số tiền bẩn ~o~đã cướp được là~s~ ~g~$%s~s~',
+  ['robbery_complete_at'] = '~g~ %s ~r~CƯỚP TIỆM VÀNG thành công.',
+  ['robbery_cancelled'] = 'Bạn đã huỷ cướp!',
+  ['robbery_cancelled_at'] = '~r~Tội phạm rén quá đã hủy cướp tại ~b~%s!',
+  ['min_police'] = 'Cần ít nhất ~b~%s cảnh sát~s~ online mới được cướp.',
+  ['robbery_already'] = '~r~Đang có người cướp~w~, vui lòng thử lại sau.',
+  ['no_threat'] = 'Bạn phải cầm vũ khí !',
+}

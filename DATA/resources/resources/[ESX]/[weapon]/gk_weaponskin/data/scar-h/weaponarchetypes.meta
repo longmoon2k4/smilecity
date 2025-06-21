@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+    <!--QBZ17-->
+    <Item>
+      <modelName>W_AR_SCARH</modelName>
+      <txdName>W_AR_SCARH</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="50"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_SCARH_MAG1</modelName>
+      <txdName>W_AR_SCARH_MAG1</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="50"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_SCARH_MAG2</modelName>
+      <txdName>W_AR_SCARH_MAG2</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="50"/>
+    </Item>
+    <Item>
+      <modelName>W_AT_SCOPE_ACOG</modelName>
+      <txdName>W_AT_SCOPE_ACOG</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="50"/>
+    </Item>
+    <Item>
+      <modelName>W_AT_SCOPE_AIMPOINT</modelName>
+      <txdName>W_AT_SCOPE_AIMPOINT</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="50"/>
+    </Item>
+    <Item>
+      <modelName>W_AT_SCOPE_EOTECH</modelName>
+      <txdName>W_AT_SCOPE_EOTECH</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="50"/>
+    </Item>
+<!--SKIN-->
+    	<Item>
+			<modelName>W_AR_SCARH_DRAGON</modelName>
+			<txdName>w_ar_scarh_dragon</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_SCARH_DRAGON_MAG1</modelName>
+			<txdName>w_ar_scarh_dragon_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>W_AR_SCARH_DRAGON_MAG2</modelName>
+			<txdName>w_ar_scarh_dragon_mag2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+
+    	<Item>
+			<modelName>W_AR_SCARH_HALLOWEEN</modelName>
+			<txdName>w_ar_scarh_halloween</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_SCARH_HALLOWEEN_MAG1</modelName>
+			<txdName>w_ar_scarh_halloween_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>W_AR_SCARH_HALLOWEEN_MAG2</modelName>
+			<txdName>w_ar_scarh_halloween_mag2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+
+      	<Item>
+			<modelName>W_AR_SCARH_NOEL</modelName>
+			<txdName>w_ar_scarh_noel</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_SCARH_NOEL_MAG1</modelName>
+			<txdName>w_ar_scarh_noel_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>	
+		<Item>
+			<modelName>W_AR_SCARH_NOEL_MAG2</modelName>
+			<txdName>w_ar_scarh_noel_mag2</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+  </InitDatas>
+</CWeaponModelInfo__InitDataList>

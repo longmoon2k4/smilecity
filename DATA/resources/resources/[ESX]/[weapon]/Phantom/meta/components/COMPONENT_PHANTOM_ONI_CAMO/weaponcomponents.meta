@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+
+<CWeaponComponentInfoBlob>
+	<Infos>
+		<Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_PHANTOM_ONI_CAMO</Name>
+      <Model>w_ar_oni</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="0"/>
+	  <ExtraComponents>
+		<Item>
+		  <ComponentName>COMPONENT_phantom_CLIP_01</ComponentName>
+		  <ComponentModel>w_ar_oni_mag1</ComponentModel>
+		</Item>
+	  </ExtraComponents>	
+    </Item>
+      <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_PHANTOM_PRIME</Name>
+      <Model>w_ar_prime</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+	  <ExtraComponents>
+	  <Item>
+		  <ComponentName>COMPONENT_phantom_CLIP_01</ComponentName>
+		  <ComponentModel>w_ar_prime_mag1</ComponentModel>
+		</Item>
+	  </ExtraComponents>
+    </Item>
+	</Infos>
+	<InfoBlobName/>
+</CWeaponComponentInfoBlob>
+

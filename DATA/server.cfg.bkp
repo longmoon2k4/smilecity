@@ -1,0 +1,112 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# ███████╗███████╗██╗  ██╗    ██╗     ███████╗ ██████╗  █████╗  ██████╗██╗   ██╗  #
+# ██╔════╝██╔════╝╚██╗██╔╝    ██║     ██╔════╝██╔════╝ ██╔══██╗██╔════╝╚██╗ ██╔╝  #
+# █████╗  ███████╗ ╚███╔╝     ██║     █████╗  ██║  ███╗███████║██║      ╚████╔╝   #
+# ██╔══╝  ╚════██║ ██╔██╗     ██║     ██╔══╝  ██║   ██║██╔══██║██║       ╚██╔╝    #
+# ███████╗███████║██╔╝ ██╗    ███████╗███████╗╚██████╔╝██║  ██║╚██████╗   ██║     #
+# ╚══════╝╚══════╝╚═╝  ╚═╝    ╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝   ╚═╝     #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+# Development Discord: https://discord.gg/cNx6HF9P5J
+# Support Discord: https://discord.gg/J6VqFPwvVp
+
+# Only change the IP if you're using a server with multiple network interfaces, otherwise change the port only.
+endpoint_add_tcp "0.0.0.0:22322"
+endpoint_add_udp "0.0.0.0:22322"
+
+
+set sv_enforceGameBuild 2944 
+exec permissions.cfg
+
+set ac_webhook "https://discord.com/api/webhooks/tatwebhooks/967450066677825537/yDhB6iipU1nM-7w6JLR4diKE5Rl97IQO8CXfTtSayQmvoZsaSZYTS1nGVZgjmlckJZrv"
+
+sv_hostname "^8SVTEST | ^5CHIẾM ĐÓNG | ^2RP | ^9THỜI TRANG | ^7UPDATE LIÊN TỤC"
+
+set steam_webApiKey "5FA128AF64AF707A15AF92C122455810"
+sv_licenseKey "cfxk_1I8o8itzzwyVsMluQnx5E_1OUV9Z"
+sv_maxclients 48   # Allow access to features usually locked behind a FiveM patreon key
+
+set onesync_distanceCullVehicles true
+set onesync_forceMigration true
+set mumble_maxClientsPerIP  1500
+sets sv_projectName "^8VIKING CITY"
+sets sv_projectDesc "discord.gg/vikingcity"
+sets Discord "https://discord.gg/vikingcity"
+sets languages "Vietnamese(Vietnam)"
+sets locale "vi-VN"
+sets Map "San Andreas"
+sets tags " vietnam, Việt Nam, rp, RolePlay, VN, GangWar, Gta5, vn, VIETNAM, vi"
+sets banner_detail "https://cdn.discordapp.com/attachments/1180031160768794727/1197488376631271555/BANER_3.png?ex=65bb72f5&is=65a8fdf5&hm=7a1501d8e39206770aff2d1a758c97b2185c28dac6dbc3699aadf85886929b0c&"
+sets banner_connecting "https://cdn.discordapp.com/attachments/1180031160768794727/1197488376631271555/BANER_3.png?ex=65bb72f5&is=65a8fdf5&hm=7a1501d8e39206770aff2d1a758c97b2185c28dac6dbc3699aadf85886929b0c&"
+
+sv_scriptHookAllowed 0
+
+load_server_icon logo.png
+
+
+# set onesync legacy   # Infinity is not recommended for ESX
+set mysql_connection_string "server=localhost;database=sulu;userid=root;password="
+
+
+## These resources will start by default.
+ensure spawnmanager
+ensure hardcap
+ensure oxmysql
+ensure bob74_ipl
+
+## Add system admins
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+#add_principal identifier.steam:11000013e99abb8 group.admin      #sulu 
+
+add_ace resource.es_extended command.add_ace allow
+add_ace resource.es_extended command.add_principal allow
+add_ace resource.es_extended command.remove_principal allow
+add_ace resource.es_extended command.stop allow
+
+### EASY ADMIN ###
+set ea_LanguageName "en"                 # set our language to english
+set ea_MenuButton "f9"			         # set our menu button to Pgup
+set ea_alwaysShowButtons "false"	     # we don't want to see buttons we can't even access, do we? default: "false"
+set ea_moderationNotification "false"    # this can be either "false" or a discord webhook address, this will send a discord message if an admin takes actions against a player  ( such as banning and kicking )
+set ea_custombanlist "false"             # read docs for this, dont touch it
+set ea_enableCallAdminCommand "true"
+set ea_enableReportCommand "true"
+
+
+
+# add_ace group.admin "WaveShield.Bypass" allow
+# add_ace group.admin "WaveShield.Commands" allow  
+
+
+set datadog:key "yourapikey"
+set datadog:site "datadoghq.com"
+
+## ESX Legacy
+ensure WaveShield
+ensure ox_lib
+ensure localstorage
+ensure [Base]
+ensure [standalone]
+ensure ox_inventory
+ensure [ESX]
+#exec @pmms/permissions.cfg
+exec @ox_inventory/config.cfg
+
+
+##Off-Citizen
+sets sv_pureLevel 1
+
+#Voice 
+setr voice_enableUi 1
+setr voice_defaultVoiceMode 2
+setr voice_enableProximityCycle 1
+setr voice_defaultRadioVolume 100
+setr voice_useSendingRangeOnly true
+#ox_lib
+setr ox:primaryColor blue
+setr ox:primaryShade 8
+
+add_ace resource.ox_lib command.add_ace allow
+add_ace resource.ox_lib command.remove_ace allow
+add_ace resource.ox_lib command.add_principal allow
+add_ace resource.ox_lib command.remove_principal allow

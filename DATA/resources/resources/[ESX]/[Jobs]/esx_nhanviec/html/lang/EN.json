@@ -1,0 +1,10 @@
+{
+    "confirmationPhraseUnemployed":     "Bạn muốn thoát khỏi nghề cũ ?",
+    "confirmationPhrase":               "Bạn có muốn trở thành",
+    "PedInfoBox":                       "Nhấn ~g~E~s~ để chọn nghề",
+    "YES":                              "Đồng Ý",
+    "NO":                               "Hủy Bỏ",
+    "notificationDesc":                 "You are now a ",
+    "notificationDescUnemployed":       "You are now unemployed",
+    "notifSubtitle":                    "Recruitment"
+}

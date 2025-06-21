@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- Fix By Claude_III -->
+<CWeaponComponentInfoBlob>
+  
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_AK12_CLIP_01</Name>
+      <Model>w_ar_ak12_mag1</Model>
+      <LocName>WCT_CLIP1</LocName>
+      <LocDesc>WCD_CLIP1</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="30" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+      <AmmoInfo />
+      <TracerFx />
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+    </Item>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_AK12_CLIP_02</Name>
+      <Model>w_ar_ak12_mag2</Model>
+      <LocName>WCT_CLIP2</LocName>
+      <LocDesc>WCD_CLIP2</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="60" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+      <AmmoInfo />
+      <TracerFx />
+      <TracerFxSpacing value="-1" />
+      <TracerFxForceLast value="-1" />
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK12_VARMOD_SAKURA</Name>
+      <Model>W_AR_ak12_sakura</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    <TintIndexOverride value="2"/>
+    <ExtraComponents>
+    <Item>
+      <ComponentName>COMPONENT_AK12_CLIP_01</ComponentName>
+      <ComponentModel>W_AR_ak12_sakura_mag1</ComponentModel>
+    </Item>
+    </ExtraComponents>
+  </Item>
+  <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK12_VARMOD_VANDAL</Name>
+      <Model>W_AR_ak12_vandal</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    <TintIndexOverride value="2"/>
+    <ExtraComponents>
+    <Item>
+      <ComponentName>COMPONENT_AK12_CLIP_01</ComponentName>
+      <ComponentModel>W_AR_ak12_vandal_mag1</ComponentModel>
+    </Item>
+    </ExtraComponents>
+  </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK12_VARMOD_PRIME</Name>
+      <Model>W_AR_ak12_prime</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    <TintIndexOverride value="2"/>
+    <ExtraComponents>
+    <Item>
+      <ComponentName>COMPONENT_AK12_CLIP_01</ComponentName>
+      <ComponentModel>W_AR_ak12_prime_mag1</ComponentModel>
+    </Item>
+    </ExtraComponents>
+  </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK12_VARMOD_ROXAEAZUL</Name>
+      <Model>W_AR_ak12_roxaeazul</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    <TintIndexOverride value="2"/>
+    <ExtraComponents>
+    <Item>
+      <ComponentName>COMPONENT_AK12_CLIP_01</ComponentName>
+      <ComponentModel>W_AR_ak12_roxaeazul_mag1</ComponentModel>
+    </Item>
+    </ExtraComponents>
+  </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK12_VARMOD_XRAY</Name>
+      <Model>W_AR_ak12_xray</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    <TintIndexOverride value="2"/>
+    <ExtraComponents>
+    <Item>
+      <ComponentName>COMPONENT_AK12_CLIP_01</ComponentName>
+      <ComponentModel>W_AR_ak12_xray_mag1</ComponentModel>
+    </Item>
+    </ExtraComponents>
+  </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK12_VARMOD_DEMON</Name>
+      <Model>W_AR_ak12_demon</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    <TintIndexOverride value="2"/>
+    <ExtraComponents>
+    <Item>
+      <ComponentName>COMPONENT_AK12_CLIP_01</ComponentName>
+      <ComponentModel>W_AR_ak12_demon_mag1</ComponentModel>
+    </Item>
+    </ExtraComponents>
+  </Item>
+  <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_AK12_VARMOD_REDRAGE</Name>
+      <Model>W_AR_ak12_redrage</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+    <TintIndexOverride value="2"/>
+    <ExtraComponents>
+    <Item>
+      <ComponentName>COMPONENT_AK12_CLIP_01</ComponentName>
+      <ComponentModel>W_AR_ak12_redrage_mag1</ComponentModel>
+    </Item>
+    </ExtraComponents>
+  </Item>
+  </Infos>
+  <InfoBlobName>AK12</InfoBlobName>
+</CWeaponComponentInfoBlob>

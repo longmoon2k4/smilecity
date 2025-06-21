@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+    <!--M4A4-->
+    <Item>
+      <modelName>W_AR_M4A4</modelName>
+      <txdName>W_AR_M4A4</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_M4A4_mag1</modelName>
+      <txdName>W_AR_M4A4_mag1</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_M4A4_MACO</modelName>
+      <txdName>W_AR_M4A4_MACO</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_M4A4_MACO_mag1</modelName>
+      <txdName>W_AR_M4A4_MACO_mag1</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_M4A4_MACO_mag2</modelName>
+      <txdName>W_AR_M4A4_MACO_mag2</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_M4A4_REDWHITE</modelName>
+      <txdName>W_AR_M4A4_REDWHITE</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_M4A4_REDWHITE_mag1</modelName>
+      <txdName>W_AR_M4A4_REDWHITE_mag1</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>W_AR_M4A4_DRAGON_KING</modelName>
+      <txdName>W_AR_M4A4_DRAGON_KING</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <!-- m4 giang sinh 1 -->
+     <Item>
+      <modelName>w_ar_m4a4_mag1_noel</modelName>
+      <txdName>w_ar_m4a4_mag1_noel</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>w_ar_m4a4_noel</modelName>
+      <txdName>w_ar_m4a4_noel</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <!-- m4 giang sinh 2 -->
+    <Item>
+      <modelName>w_ar_m4a4_mag1_noel2</modelName>
+      <txdName>w_ar_m4a4_mag1_noel2</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item>
+    <Item>
+      <modelName>w_ar_m4a4_noel2</modelName>
+      <txdName>w_ar_m4a4_noel2</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item> 
+    <Item>
+      <modelName>w_ar_m4a4_supp_noel2</modelName>
+      <txdName>w_ar_m4a4_supp_noel2</txdName>
+      <ptfxAssetName>null</ptfxAssetName>
+      <lodDist value="500"/>
+    </Item> 
+  </InitDatas>
+</CWeaponModelInfo__InitDataList>

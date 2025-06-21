@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reward Event</title>
+        <link rel = "stylesheet" type = "text/css" href="style.css"/>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        
+      
+      
+        <div class = 'bodyhtml'>
+
+            <div class='loadingscreen'>
+                <div class='loader'>
+                    <div class="line-scale">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+               </div>
+            </div>
+
+            <div class = 'popup zoom'>
+                <div class="pyro">
+                    <div class="before"></div>
+                    <div class="after"></div>
+                </div>
+
+                <div class = "zoomhover-1s  zoomhover-s110" id='closepopup'></div>
+                <div class ='content'> 
+                    <span id='contentpopup'>Có lỗi xảy ra vui lòng tắt mở lại menu</span>
+                </div>
+
+                <div class='cover'></div>
+            </div>
+
+
+            <div class = "container">
+                <div class = "title autozoom"></div>
+                <div class = "logo zoomhover-1s  zoomhover-s130"></div>
+                <div class = "logohide"></div>
+                <a href = "#"  class = "quit zoomhover-2s zoomhover-s120" id ="close"></a>
+    
+                <div class = "bodyevent">
+                   
+                    <div class = "trangchu">
+                        
+                        <div class = "levelbody"> 
+                            <div class = "numberLevel">
+                                <div id = "previousLevel">1</div>
+                                <div   id = "nextLevel"  >2</div>
+                            </div>
+        
+                            <div class = "bar">     
+                                <div class = "progress" id = "expBar">10/1000</div> 
+                            </div> 
+                        </div>
+                       
+    
+                        <table class = "rewardbody">
+    
+                            <div class = "homebutton"> 
+                                <div class = "zoomhover-1s  zoomhover-s110" id = "prevButton"></div>
+                                <div class = "zoomhover-1s  zoomhover-s110" id = "nextButton"></div> 
+                            </div>
+                            
+                            <thead>
+                                <tr class = "mainthead">
+                                  <th>Level <span id = "level1">1</span> </th>
+                                  <th>Level <span id = "level2">2</span> </th>
+                                  <th>Level <span id = "level3">3</span> </th>
+                                  <th>Level <span id = "level4">4</span> </th>
+                                  <th>Level <span id = "level5">5</span> </th>
+                                </tr>
+                            </thead>
+    
+                            <tbody>
+                                <tr class = "mainrow free">
+                                  <td id = "free1" onclick="rewardItem('free' , 1)">free1</td>
+                                  <td id = "free2" onclick="rewardItem('free' , 2)">free2</td>
+                                  <td id = "free3" onclick="rewardItem('free' , 3)">free3</td>
+                                  <td id = "free4" onclick="rewardItem('free' , 4)">free4</td>
+                                  <td id = "free5" onclick="rewardItem('free' , 5)">free5</td>
+                                </tr>
+                                <th  class = "titlerow" colspan = "5">Premium Rewards</th>
+                                <tr class = "mainrow premium">
+                                    <td id = "premium1" onclick="rewardItem('premium' , 1)">premium1</td>
+                                    <td id = "premium2" onclick="rewardItem('premium' , 2)">premium2</td>
+                                    <td id = "premium3" onclick="rewardItem('premium' , 3)">premium3</td>
+                                    <td id = "premium4" onclick="rewardItem('premium' , 4)">premium4</td>
+                                    <td id = "premium5" onclick="rewardItem('premium' , 5)">premium5</td>
+                                </tr>
+                            </tbody>
+    
+                        </table>
+                  
+    
+                    </div>
+    
+                    <div class = "thongtin">
+                            <div class = "texttitle">Thông tin sự kiện:</div>
+                            <div class = "text"> </div>
+                            <div class = "texttitle">Thời gian diễn ra:</div>
+                            <div class = "text"> - Từ 18:00 12/12/2023 đến 18:00 12/01/2024</div>
+                            <div class = "texttitle">Thể lệ chơi:</div>
+                            <div class = "text"> 
+                                - Event sẽ có 2 nhiệm vụ: nhiệm vụ chuỗi và nhiệm vụ hằng ngày.<br>
+                                + Đối với nhiệm vụ hằng ngày: mỗi ngày có số lượng nhiệm vụ nhất định và chỉ hiệu lực trong vòng 24h, mỗi người sẽ có nội dung nhiệm vụ khác nhau.<br>
+                                + Đối với nhiệm vụ chuỗi: hoàn thành các nhiệm vụ nhỏ để nhận điểm, đạt đủ số điểm sẽ lên level.<br>
+                                - <b>Lưu ý:</b> nhiệm vụ hoàn thành phải đạt level tối  thiểu yêu cầu để có thể nhận điểm.
+                            </div>
+                            <div class = "texttitle">Phần thưởng:</div>
+                            <div class = "text">- Event gift sẽ có 2 mức là mức thường và Premium, để mở khóa Premium hãy vào discord server để nhận thông tin chi tiết.</div>
+                            <div class = "texttitle">Một số câu hỏi thường gặp:</div>
+                            <div class = "text">
+                                <p class = 'ask'>1. Làm sao để nhận các phần quà?</p>
+                                <p class = 'ans'>- Bạn phải đạt được cấp bậc tối thiểu thì mới có thể nhận quà, đối với phần quà Premium thì bạn phải kích hoạt Premium Pass thì mới có thể nhận.</p>
+                                <br>
+                                <p class = 'ask'>2. Làm sao để nhận nhiệm vụ?</p>
+                                <p class = 'ans'>- Tất cả nhiệm vụ chính bạn đã được nhận từ Level 0 và có thể hoàn thành trước nhưng bạn chỉ có thể nhận điểm khi đạt được Level tối thiểu yêu cầu, đối với nhiệm vụ hằng ngày sẽ được giao nhẫu nhiên và Reset mỗi ngày.</p>
+                                <br>
+                                <p class = 'ask'>3. Tại sao tôi không thể nhận điểm dù đã hoàn thành nhiệm vụ?</p>
+                                <p class = 'ans'>- Bạn phải đủ level tối thiểu để mới có thể nhận điểm.</p>
+                                <br>
+                                <p class = 'ask'>4. Nếu nhiệm vụ hằng ngày tôi liên quan tới chất cấm mà không có công an thì làm sao hoàn thành?</p>
+                                <p class = 'ans'>- Chúng tôi đảm bảo rằng nhiệm vụ hằng ngày sẽ được random trừ các nhiệm vụ chất cấm nên bạn cứ yên tâm mà chơi nhé.</p>
+                                <br>
+                                <p class = 'ask'>5. Làm sao để kích hoạt Premium Pass?</p>
+                                <p class = 'ans'>- Để kích hoạt Premium Pass bạn vui lòng liên hệ đội ngũ Admin qua Discord nhé.</p>
+
+                            </div>
+                    </div>
+    
+                    <div class = "nhiemvu">
+    
+                        <table class = "missionbody">
+                            
+                            <tbody>
+                                <th  class = "titlerow" colspan = "5">Nhiệm vụ hằng ngày</th>
+    
+                   
+                                <tr class = "mainrow">
+                                    <td>Đào đá và nung được 10 viên Kim Cương</td>
+                                    <td>250 điểm</td>
+                                    <td>Level 0</td>
+                                    <td>10/10</td>
+                                    <td class = 'cantreward danhan'></td>
+                                </tr>
+    
+                                <tr class = "mainrow">
+                                    <td>Chặt được 10 gỗ trầm hương</td>
+                                    <td>100 điểm</td>
+                                    <td>Level 0</td>
+                                    <td>10/10</td>
+                                    <td class = 'zoomhover-1s zoomhover-s105'></td>
+                                </tr>
+                         
+                               
+    
+                                <th  class = "titlerow" colspan = "5">Nhiệm vụ chính</th>
+                              
+          
+                                <tr class = "mainrow">
+                                    <td>Đào đá và nung được 100 viên Kim Cương</td>
+                                    <td>500 điểm</td>
+                                    <td>Level 5</td>
+                                    <td>10/100</td>
+                                    <td class = 'cantreward'></td>
+                                </tr>
+    
+                                <tr class = "mainrow">
+                                    <td>Đào đá và nung được 200 viên Kim Cương</td>
+                                    <td>1000 điểm</td>
+                                    <td>Level 10</td>
+                                    <td>10/200</td>
+                                    <td class = 'cantreward lock'></td>
+                                </tr>
+
+    
+                            </tbody>
+    
+                        </table>
+                  
+                    </div>
+
+
+                    <div class = "bangxephang">
+    
+                
+                        <table class = "topchartsbody">
+
+                            <thead>
+                                <tr class = "mainthead">
+                                    <th>Thứ hạng</th>
+                                    <th>Người chơi</th>
+                                    <th>Số điểm</th>
+                                </tr>
+                            </thead>
+
+
+
+                            <tbody>
+                                <tr class = 'top1'>
+                                    <td id = 'stt'></td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top2'>
+                                    <td id = 'stt'></td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top3'>
+                                    <td id = 'stt'></td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top4'>
+                                    <td id = 'stt'>4</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+                              
+                                <tr class = 'top5'>
+                                    <td id = 'stt'>5</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top6'>
+                                    <td id = 'stt'>6</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top7'>
+                                    <td id = 'stt'>7</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top8'>
+                                    <td id = 'stt'>8</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top9'>
+                                    <td id = 'stt'>9</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top10'>
+                                    <td id = 'stt'>10</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top11'>
+                                    <td id = 'stt'>11</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top12'>
+                                    <td id = 'stt'>12</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top13'>
+                                    <td id = 'stt'>13</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+                                
+                                <tr class = 'top14'>
+                                    <td id = 'stt'>14</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top15'>
+                                    <td id = 'stt'>15</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top16'>
+                                    <td id = 'stt'>16</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top17'>
+                                    <td id = 'stt'>17</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top18'>
+                                    <td id = 'stt'>18</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top19'>
+                                    <td id = 'stt'>19</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+
+                                <tr class = 'top20'>
+                                    <td id = 'stt'>20</td>  
+                                    <td id = 'ten'></td>  
+                                    <td id = 'diem'></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                  
+                    </div>
+
+
+
+
+       
+                </div>
+
+
+                
+             
+                  
+                <div class = "buttonevent"> 
+                    <div class = "zoomhover-1s zoomhover-s110" id = "home"></div>
+                    <div class = "zoomhover-1s zoomhover-s110" id = "info"></div>
+                    <div class = "zoomhover-1s zoomhover-s110" id = "mission"></div>
+                    <div class = "zoomhover-1s zoomhover-s110" id = "top"></div>
+                </div>
+    
+            </div>               
+        </div>
+
+      
+        <script src="./script.js" type="text/javascript"></script>
+    </body>
+</html>

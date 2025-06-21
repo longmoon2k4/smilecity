@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponComponentInfoBlob>
+  <Data>
+  </Data>
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_CLIP_01</Name>
+      <Model>w_ar_bullpuprifle_mag1</Model>
+      <LocName>WCT_CLIP1</LocName>
+      <LocDesc>WCD_BRIF_CLIP1</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="30" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+    </Item>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_CLIP_02</Name>
+      <Model>w_ar_bullpuprifle_mag2</Model>
+      <LocName>WCT_CLIP2</LocName>
+      <LocDesc>WCD_BRIF_CLIP2</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="100" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="60" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+    </Item>
+
+
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_MEIKO</Name>
+      <Model>w_ar_bullpuprifle_meiko</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	    <TintIndexOverride value="2"/>
+    </Item>
+
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_LIGHT</Name>
+      <Model>w_ar_bullpuprifle_light</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	    <TintIndexOverride value="2"/>
+    </Item>
+
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_GALAXY1</Name>
+      <Model>w_ar_bullpuprifle_galaxy1</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	    <TintIndexOverride value="2"/>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_GALAXY</Name>
+      <Model>w_ar_bullpuprifle_galaxy</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	    <TintIndexOverride value="2"/>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_BOSUA</Name>
+      <Model>w_ar_bullpuprifle_bosua</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	    <TintIndexOverride value="2"/>
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+        <Name>COMPONENT_BULLPUPRIFLE_BONGDEM</Name>
+        <Model>w_ar_bullpuprifle_bongdem</Model>
+        <LocName>WCT_INVALID</LocName>
+        <LocDesc>WCD_INVALID</LocDesc>
+        <AttachBone />
+        <AccuracyModifier type="NULL" />
+        <DamageModifier type="NULL" />
+        <bShownOnWheel value="false" />
+        <CreateObject value="false" />
+        <HudDamage value="0" />
+        <HudSpeed value="0" />
+        <HudCapacity value="0" />
+        <HudAccuracy value="0" />
+        <HudRange value="0" />
+        <TintIndexOverride value="2"/>
+    </Item>
+
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_SAKURA</Name>
+      <Model>w_ar_bullpuprifle_sakura</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+		      <ComponentName>COMPONENT_BULLPUPRIFLE_CLIP_01</ComponentName>
+		      <ComponentModel>w_ar_bullpuprifle_sakura_mag1</ComponentModel>
+		    </Item>
+        <Item>
+		      <ComponentName>COMPONENT_BULLPUPRIFLE_CLIP_02</ComponentName>
+		      <ComponentModel>w_ar_bullpuprifle_sakura_mag1</ComponentModel>
+		    </Item>
+        <Item>
+		      <ComponentName>COMPONENT_AT_AR_SUPP</ComponentName>
+		      <ComponentModel>w_at_ar_supp_bullpuprifle_sakura</ComponentModel>
+		    </Item>
+      </ExtraComponents>
+    </Item>
+
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_ZOMBIE</Name>
+      <Model>w_ar_bullpuprifle_zombie</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+		      <ComponentName>COMPONENT_BULLPUPRIFLE_CLIP_01</ComponentName>
+		      <ComponentModel>w_ar_bullpuprifle_zombie_mag1</ComponentModel>
+		    </Item>
+        <Item>
+		      <ComponentName>COMPONENT_BULLPUPRIFLE_CLIP_02</ComponentName>
+		      <ComponentModel>w_ar_bullpuprifle_zombie_mag1</ComponentModel>
+		    </Item>
+        <Item>
+		      <ComponentName>COMPONENT_AT_AR_SUPP</ComponentName>
+		      <ComponentModel>w_at_ar_supp_bullpuprifle_zombie</ComponentModel>
+		    </Item>
+      </ExtraComponents>
+    </Item>
+
+     <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_BULLPUPRIFLE_GIANGSINH</Name>
+      <Model>w_ar_bullpuprifle_crm</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+		      <ComponentName>COMPONENT_BULLPUPRIFLE_CLIP_01</ComponentName>
+		      <ComponentModel>w_ar_bullpuprifle_crm_mag1</ComponentModel>
+		    </Item>
+        <Item>
+		      <ComponentName>COMPONENT_BULLPUPRIFLE_CLIP_02</ComponentName>
+		      <ComponentModel>w_ar_bullpuprifle_crm_mag1</ComponentModel>
+		    </Item>
+        <Item>
+		      <ComponentName>COMPONENT_AT_AR_SUPP</ComponentName>
+		      <ComponentModel>w_at_ar_supp_bullpuprifle_crm</ComponentModel>
+		    </Item>
+      </ExtraComponents>
+    </Item>
+  </Infos>
+  <InfoBlobName>DLC - Business</InfoBlobName>
+</CWeaponComponentInfoBlob>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+	<InitDatas>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_MEIKO</modelName>
+			<txdName>w_ar_bullpuprifle_meiko</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_BONGDEM</modelName>
+			<txdName>w_ar_bullpuprifle_bongdem</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_BOSUA</modelName>
+			<txdName>w_ar_bullpuprifle_bosua</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_GALAXY</modelName>
+			<txdName>w_ar_bullpuprifle_galaxy</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_GALAXY1</modelName>
+			<txdName>w_ar_bullpuprifle_galaxy1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_LIGHT</modelName>
+			<txdName>w_ar_bullpuprifle_light</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_SAKURA</modelName>
+			<txdName>w_ar_bullpuprifle_sakura</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_SAKURA_MAG1</modelName>
+			<txdName>w_ar_bullpuprifle_sakura_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_at_ar_supp_bullpuprifle_sakura</modelName>
+			<txdName>w_at_ar_supp_bullpuprifle_sakura</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_ZOMBIE</modelName>
+			<txdName>w_ar_bullpuprifle_zombie</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>W_AR_BULLPUPRIFLE_ZOMBIE_MAG1</modelName>
+			<txdName>w_ar_bullpuprifle_zombie_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_at_ar_supp_bullpuprifle_zombie</modelName>
+			<txdName>w_at_ar_supp_bullpuprifle_zombie</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+
+		<!-- bullpup giang sinh -->
+		<Item>
+			<modelName>w_ar_bullpuprifle_crm</modelName>
+			<txdName>w_ar_bullpuprifle_crm</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_ar_bullpuprifle_crm_mag1</modelName>
+			<txdName>w_ar_bullpuprifle_crm_mag1</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+		<Item>
+			<modelName>w_at_ar_supp_bullpuprifle_crm</modelName>
+			<txdName>w_at_ar_supp_bullpuprifle_crm</txdName>
+			<ptfxAssetName>null</ptfxAssetName>
+			<lodDist value="50"/>
+		</Item>
+	</InitDatas>
+</CWeaponModelInfo__InitDataList>

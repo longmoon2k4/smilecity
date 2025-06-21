@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Oswald:wght@700&family=Rubik:ital,wght@1,400;1,600&family=Work+Sans:ital,wght@1,200&display=swap');
+        body {
+            font-family: 'Work Sans', sans-serif;
+        }
+        img{
+            width: 70%;
+        }
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: rgb(33, 137, 241);
+        }
+
+        .dame {
+            position: fixed;
+            animation: mymove 2.0s infinite;
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        @keyframes mymove {
+            from {
+                top: 50%;
+                right: 45%;
+            }
+
+            to {
+                top: 35%;
+                right: 45%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="my_audio">
+        <source src="img/hit.ogg" type="audio/ogg">
+    </audio>
+    <div class="root">
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    var audioPlayer = document.getElementById("my_audio");
+    $(document).ready(function () {
+        window.addEventListener('message', function (event) {
+
+            tiemout(event.data);
+
+        })
+    })
+
+    function tiemout(data) {
+        if (data.type == 'armor') {
+
+            $('.root').append('<div class="dame blue">' + data.number + '</div>')
+            audioPlayer.play()
+            setTimeout(function () { $('.root div').first().remove() }, 2000);
+        } else if(data.type == 'heal'){
+            if (data.number == 'die') {
+                audioPlayer.play()
+                $('.root').append(' <div class="dame "><img src="img/die.png"></div>')
+                setTimeout(function () { $('.root div').first().remove() }, 2000);
+            } else {
+                audioPlayer.play()
+                $('.root').append('<div class="dame red">' + data.number + '</div>')
+                setTimeout(function () { $('.root div').first().remove() }, 2000);
+            }
+        }
+    }
+</script>
+
+</html>

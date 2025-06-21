@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponModelInfo__InitDataList>
+  <InitDatas>
+	<!-- Heavy Rifle H -->
+
+	<Item>
+		<modelName>W_AR_HeavyRifleH</modelName>
+		<txdName>W_AR_HeavyRifleH</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	<Item>
+		<modelName>W_AR_HeavyRifleH_Mag1</modelName>
+		<txdName>W_AR_HeavyRifleH_Mag1</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+	<Item>
+		<modelName>W_AR_HeavyRifleH_Mag2</modelName>
+		<txdName>W_AR_HeavyRifleH_Mag2</txdName>
+		<ptfxAssetName>null</ptfxAssetName>
+		<lodDist value="50"/>
+	</Item>
+  </InitDatas>
+</CWeaponModelInfo__InitDataList>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponComponentInfoBlob>
+  <Data>
+  </Data>
+  <Infos>
+	    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_G36C_CLIP_01</Name>
+      <Model>w_ar_g36c_mag1</Model>
+      <LocName>WCT_CLIP1</LocName>
+      <LocDesc>WCD_BRIF_CLIP1</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="100" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="30" />
+      <ReloadData ref="RELOAD_EXTRA_LARGE" />
+	</Item>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_G36C_CLIP_02</Name>
+      <Model>w_ar_g36c_mag1</Model>
+      <LocName>WCT_CLIP2</LocName>
+      <LocDesc>WCD_BRIF_CLIP2</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="100" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="60" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+    </Item>
+
+   
+
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_G36C_PS</Name>
+      <Model>w_ar_g36c_ps</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+	  <ExtraComponents>
+	  <Item>
+		  <ComponentName>COMPONENT_G36C_CLIP_01</ComponentName>
+		  <ComponentModel>w_ar_g36c_ps_mag1</ComponentModel>
+		</Item>
+	  <Item>
+		  <ComponentName>COMPONENT_G36C_CLIP_02</ComponentName>
+		  <ComponentModel>w_ar_g36c_ps_mag1</ComponentModel>
+		</Item>
+	  </ExtraComponents>
+    </Item>
+
+        <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_G36C_NOEL</Name>
+      <Model>w_ar_g36c_noel</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+	  <TintIndexOverride value="2"/>
+	  <ExtraComponents>
+	  <Item>
+		  <ComponentName>COMPONENT_G36C_CLIP_01</ComponentName>
+		  <ComponentModel>w_ar_g36c_noel_mag1</ComponentModel>
+		</Item>
+	  <Item>
+		  <ComponentName>COMPONENT_G36C_CLIP_02</ComponentName>
+		  <ComponentModel>w_ar_g36c_noel_mag1</ComponentModel>
+		</Item>
+	  </ExtraComponents>
+    </Item>
+  </Infos>
+  <InfoBlobName>DLC - Business</InfoBlobName>
+</CWeaponComponentInfoBlob>

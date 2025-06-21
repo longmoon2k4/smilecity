@@ -1,0 +1,15 @@
+	{
+		name = 'WEAPON_SCARH',
+		label = "SCAR L",
+		ammo = {label = _U('ammo_rounds'), hash = GetHashKey('AMMO_RIFLE')},
+		tints = Config.DefaultWeaponTints,
+		loai = '#a55eea',
+		components = {
+			{ name = 'clip_default', label = "default clip", hash = GetHashKey('COMPONENT_SCARH_CLIP_01') },
+			{ name = 'clip_extended', label = _U('component_clip_extended'), hash = GetHashKey('COMPONENT_SCARH_CLIP_02') },
+			{ name = 'flashlight', label = _U('component_flashlight'), hash = GetHashKey('COMPONENT_AT_AR_FLSH') },
+			{ name = 'scope', label = _U('component_scope'), hash = GetHashKey('COMPONENT_AT_SCOPE_ACOG') },
+			{ name = 'suppressor', label = _U('component_suppressor'), hash = GetHashKey('COMPONENT_AT_AR_SUPP_02') },
+			{ name = 'grip', label = _U('component_grip'), hash = GetHashKey('COMPONENT_AT_AR_AFGRIP') },
+		}
+	},

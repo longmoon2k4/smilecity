@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CWeaponComponentInfoBlob>
+  <Infos>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_CARBINERIFLE_CLIP_01</Name>
+      <Model>w_ar_carbinerifle_mag1</Model>
+      <LocName>WCT_CLIP1</LocName>
+      <LocDesc>WCD_CR_CLIP1</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="30" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+    </Item>
+    <Item type="CWeaponComponentClipInfo">
+      <Name>COMPONENT_CARBINERIFLE_CLIP_02</Name>
+      <Model>w_ar_carbinerifle_mag2</Model>
+      <LocName>WCT_CLIP2</LocName>
+      <LocDesc>WCD_CR_CLIP2</LocDesc>
+      <AttachBone>AAPClip</AttachBone>
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="true" />
+      <CreateObject value="true" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="100" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <ClipSize value="60" />
+      <ReloadData ref="RELOAD_DEFAULT" />
+    </Item>
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_CARBINERIFLE_M13</Name>
+      <Model>w_ar_carbinerifle_m13</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_m13_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_m13_mag1</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <!-- DRAGON -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_CARBINERIFLE_DRAGON</Name>
+      <Model>w_ar_carbinerifle_dragon</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_dragon_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_dragon_mag1</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+      <!-- cyber -->
+      <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_CARBINERIFLE_CYPER</Name>
+      <Model>w_ar_carbinerifle_cyber</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_cyber_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_cyber_mag1</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+      <!-- oye -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_CARBINERIFLE_OYE</Name>
+      <Model>w_ar_carbinerifle_oye</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_oye_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_oye_mag1</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <!-- daulau -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_CARBINERIFLE_DAULAU</Name>
+      <Model>w_ar_carbinerifle_daulau</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_daulau_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_daulau_mag1</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+    <!-- Hypest -->
+    <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_CARBINERIFLE_HYPEST</Name>
+      <Model>w_ar_carbinerifle_hypest</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_hypest_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_hypest_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+
+     <!-- m4a1 nevan  -->
+     <Item type="CWeaponComponentVariantModelInfo">
+      <Name>COMPONENT_CARBINERIFLE_NEVAN</Name>
+      <Model>w_ar_carbinerifle_neva</Model>
+      <LocName>WCT_INVALID</LocName>
+      <LocDesc>WCD_INVALID</LocDesc>
+      <AttachBone />
+      <AccuracyModifier type="NULL" />
+      <DamageModifier type="NULL" />
+      <bShownOnWheel value="false" />
+      <CreateObject value="false" />
+      <HudDamage value="0" />
+      <HudSpeed value="0" />
+      <HudCapacity value="0" />
+      <HudAccuracy value="0" />
+      <HudRange value="0" />
+      <TintIndexOverride value="2"/>
+      <ExtraComponents>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_01</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_neva_mag1</ComponentModel>
+        </Item>
+        <Item>
+          <ComponentName>COMPONENT_CARBINERIFLE_CLIP_02</ComponentName>
+          <ComponentModel>w_ar_carbinerifle_neva_mag2</ComponentModel>
+        </Item>
+      </ExtraComponents>
+    </Item>
+  </Infos>
+  <InfoBlobName>Core Game</InfoBlobName>
+</CWeaponComponentInfoBlob>
